@@ -1,3 +1,9 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
 body {
     font-family: sans-serif;
     line-height: 1.6;
@@ -31,11 +37,17 @@ header a {
 header ul {
     padding: 0;
     list-style: none;
+    /* margin-bottom: 20px; */
 }
 
 header li {
     display: inline;
-    padding: 0 20px 0 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+header li:hover {
+    background-color: #ddd;
+    border-radius: 8px;
 }
 
 header #branding {
@@ -58,7 +70,9 @@ section {
     border: 1px solid #ddd;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: #333;
 }
 
