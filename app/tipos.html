@@ -2,19 +2,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tipos de Bicicletas</title>
     <link rel="stylesheet" href="/../public/css/styles.css">
 </head>
 <body>
-        <header>
+    <header>
         <div class="container">
             <div id="branding">
                 <h1>Tipos de bicicletas</h1>
             </div>
+
             <nav>
                 <ul>
-                    <li><a href="/../index.html">Inicio</a></li>
-                    <li><a href="tipos.html">Tipos</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="tipos.html" class="active">Tipos</a></li>
                     <li><a href="accesorios.html">Accesorios</a></li>
                     <li><a href="marcas.html">Marcas</a></li>
                     <li><a href="recomendaciones.html">Recomendaciones</a></li>
@@ -23,5 +24,68 @@
             </nav>
         </div>
     </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero bg-gray-100 py-12 text-center">
+            <h1 class="text-4xl font-bold text-blue-700">Tipos de Bicicletas</h1>
+            <p class="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
+                Cada bicicleta está diseñada para un propósito distinto. Aquí te mostramos los principales tipos y sus características.
+            </p>
+        </section>
+
+        <!-- Tipos de bicicletas -->
+        <section class="types py-12 bg-white">
+            <div class="container grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="type-card p-6 border rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-semibold text-blue-600">Bicicletas de Montaña</h2>
+                    <p class="mt-2 text-gray-700">
+                        Ideales para terrenos irregulares, caminos de tierra y senderos. Suelen tener suspensión delantera o doble y neumáticos anchos.
+                    </p>
+                    <a href="montana.html" class="text-blue-600 font-medium hover:underline">Ver más</a>
+                </div>
+
+                <div class="type-card p-6 border rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-semibold text-blue-600">Bicicletas de Carretera</h2>
+                    <p class="mt-2 text-gray-700">
+                        Diseñadas para velocidad en asfalto. Son ligeras, con neumáticos finos y manillar curvado para mejorar la aerodinámica.
+                    </p>
+                    <a href="carretera.html" class="text-blue-600 font-medium hover:underline">Ver más</a>
+                </div>
+
+                <div class="type-card p-6 border rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-semibold text-blue-600">Bicicletas Urbanas</h2>
+                    <p class="mt-2 text-gray-700">
+                        Pensadas para la ciudad: cómodas, prácticas y con accesorios como portaequipajes o guardabarros.
+                    </p>
+                    <a href="urbanas.html" class="text-blue-600 font-medium hover:underline">Ver más</a>
+                </div>
+
+                <div class="type-card p-6 border rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-semibold text-blue-600">Bicicletas Eléctricas</h2>
+                    <p class="mt-2 text-gray-700">
+                        Incorporan un motor eléctrico que ayuda al pedaleo. Perfectas para desplazamientos largos o para quienes buscan un extra de comodidad.
+                    </p>
+                    <a href="electricas.html" class="text-blue-600 font-medium hover:underline">Ver más</a>
+                </div>
+
+                <div class="type-card p-6 border rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-semibold text-blue-600">Bicicletas Híbridas</h2>
+                    <p class="mt-2 text-gray-700">
+                        Combinan características de montaña y carretera. Versátiles y cómodas, ideales para quienes buscan una bici polivalente.
+                    </p>
+                    <a href="hibridas.html" class="text-blue-600 font-medium hover:underline">Ver más</a>
+                </div>
+
+                <div class="type-card p-6 border rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-semibold text-blue-600">BMX</h2>
+                    <p class="mt-2 text-gray-700">
+                        Bicicletas pequeñas y resistentes, pensadas para acrobacias, saltos y circuitos urbanos. Muy populares entre jóvenes.
+                    </p>
+                    <a href="bmx.html" class="text-blue-600 font-medium hover:underline">Ver más</a>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
