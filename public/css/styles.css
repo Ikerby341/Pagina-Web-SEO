@@ -48,6 +48,7 @@ header li {
 header li:hover {
     background-color: #ddd;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 header #branding {
