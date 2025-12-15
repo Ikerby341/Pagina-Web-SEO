@@ -23,24 +23,35 @@
             </nav>
         </div>
     </header>
-    <section class="hero bg-gray-100 py-12 text-center">
-            <p class="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
-                Si tienes alguna pregunta, sugerencia o simplemente quieres ponerte en contacto con nosotros, no dudes en enviarnos un correo electrónico a <a href="mailto:cyclismers@gmail.com">cyclismers@gmail.com</a>. Estaremos encantados de ayudarte en todo lo que necesites.
+    <section>
+            <p>
+                Si tienes alguna pregunta, sugerencia o simplemente quieres ponerte en contacto con nosotros, no dudes en enviarnos un correo electrónico a <a href="mailto:a.pardo@sapalomera.cat?subject=Consulta desde la página web">cyclismers@gmail.com</a>. Estaremos encantados de ayudarte en todo lo que necesites.
             </p>
     </section>
-    <section class="hero bg-gray-100 py-12 text-center">
-        <form action="mailto:cyclismers@gmail.com">
-            <label for="name" class="block text-lg font-medium text-gray-700">Nombre:</label>
-            <input type="text" id="name" name="name" class="mt-1 p-2 border border-gray-300 rounded-md w-full max-w-md">
+    <section>
+        <form id="contactForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
 
-            <label for="email" class="block text-lg font-medium text-gray-700 mt-4">Correo electrónico:</label>
-            <input type="email" id="email" name="email" class="mt-1 p-2 border border-gray-300 rounded-md w-full max-w-md">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
 
-            <label for="message" class="block text-lg font-medium text-gray-700 mt-4">Mensaje:</label>
-            <textarea id="message" name="message" rows="4" class="mt-1 p-2 border border-gray-300 rounded-md w-full max-w-md"></textarea>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
 
-            <button type="submit" class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">Enviar</button>
+            <button type="submit">Enviar</button>
         </form>
     </section>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            const subject = 'Consulta desde la página web';
+            const body = `Nombre: ${name}\nCorreo: ${email}\nMensaje: ${message}`;
+            window.location.href = `mailto:a.pardo@sapalomera.cat?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        });
+    </script>
 </body>
 </html>
