@@ -3,19 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Una pàgina per informar-te sobre les bicicletes de distintas bicicletes millor valorades segons la categoria." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CyclismWeb | Millors biciletes" />
+    <meta property="og:description"
+        content="Una pàgina per informar-te sobre les bicicletes de distintas bicicletes millor valorades segons la categoria." />
+    <!-- <meta property="og:image" content=""> -->
+    <!-- <meta property="og:url" content="https://cyclismweb."> -->
+    <meta name="keywords"
+        content="Millors bicicletes de muntanya, Bicicletes de muntanya barates, Bicicletes de muntanya per principiants, Bicicletes de muntanya professionals, Bicicletes de muntanya lleugeres, Bicicletes de muntanya resistents" />
+
     <title>CyclismWeb</title>
-    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="public/css/header.css" />
+    <link rel="stylesheet" href="public/css/styles.css" />
+
 </head>
 
 <body>
     <header>
         <div class="container">
-            <div id="branding">
+            <div class="logotip">
                 <h1>CyclismWEB</h1>
             </div>
 
             <nav>
-                <ul>
+                <ul class="navbar">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="app/tipos.html">Tipos</a></li>
                     <li><a href="app/accesorios.html">Accesorios</a></li>
@@ -30,45 +43,50 @@
 
     <main>
         <!-- Hero principal -->
-        <section class="hero bg-gray-100 py-12 text-center">
-            <h1 class="text-4xl font-bold text-blue-700">Bienvenido a CyclismWeb</h1>
-            <p class="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
-                CyclismWeb es una plataforma dedicada al mundo del ciclismo. Aquí encontrarás información sobre bicicletas, accesorios, marcas y consejos para mejorar tu experiencia sobre dos ruedas.
+        <section class="bienvenida contenido">
+            <h1 class="titol-principal">Bienvenido a CyclismWeb</h1>
+            <p class="text">
+                CyclismWeb es una plataforma dedicada al mundo del ciclismo. Aquí encontrarás información sobre
+                bicicletas, accesorios, marcas y consejos para mejorar tu experiencia sobre dos ruedas.
             </p>
         </section>
 
         <!-- Sección sobre nosotros -->
-        <section class="about py-12 bg-white text-center">
-            <h2 class="text-3xl font-semibold text-blue-600">¿Qué es CyclismWeb?</h2>
-            <p class="mt-4 text-gray-700 max-w-3xl mx-auto">
-                Nuestro objetivo es acercar el ciclismo a todos: desde principiantes que buscan su primera bicicleta hasta ciclistas experimentados que quieren optimizar su rendimiento. 
-                Compartimos guías, recomendaciones y recursos para que disfrutes del ciclismo de manera segura y apasionante.
+        <section class="informacion contenido">
+            <h2 class="titol">¿Qué es CyclismWeb?</h2>
+            <p class="text">
+                Nuestro objetivo es acercar el ciclismo a todos: desde principiantes que buscan su primera bicicleta
+                hasta ciclistas experimentados que quieren optimizar su rendimiento.
+                Compartimos guías, recomendaciones y recursos para que disfrutes del ciclismo de manera segura y
+                apasionante.
             </p>
         </section>
 
         <!-- Sección de categorías destacadas -->
-        <section class="features py-12 bg-gray-50">
-            <div class="container grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div>
-                    <h3 class="text-xl font-bold text-blue-700">Tipos de bicicletas</h3>
-                    <p class="mt-2 text-gray-600">Descubre las diferencias entre bicicletas de montaña, carretera, urbanas y más.</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold text-blue-700">Accesorios esenciales</h3>
-                    <p class="mt-2 text-gray-600">Cascos, luces, ropa técnica y todo lo que necesitas para pedalear con seguridad.</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold text-blue-700">Marcas destacadas</h3>
-                    <p class="mt-2 text-gray-600">Conoce las principales marcas del mercado y sus modelos más recomendados.</p>
-                </div>
+        <section class="destacadas contenido">
+            <div class="subcontenido">
+                <h3 class="subtitol">Tipos de bicicletas</h3>
+                <p class="text">Descubre las diferencias entre bicicletas de montaña, carretera,
+                    urbanas y más.</p>
+            </div>
+            <div class="subcontenido">
+                <h3 class="subtitol">Accesorios esenciales</h3>
+                <p class="text">Cascos, luces, ropa técnica y todo lo que necesitas para pedalear con
+                    seguridad.</p>
+            </div>
+            <div class="subcontenido">
+                <h3 class="subtitol">Marcas destacadas</h3>
+                <p class="text">Conoce las principales marcas del mercado y sus modelos más
+                    recomendados.</p>
             </div>
         </section>
 
         <!-- Sección de recomendaciones -->
-        <section class="recommendations py-12 bg-white text-center">
-            <h2 class="text-3xl font-semibold text-blue-600">Consejos y rutas</h2>
-            <p class="mt-4 text-gray-700 max-w-3xl mx-auto">
-                Te ofrecemos recomendaciones de entrenamiento, rutas ciclistas y consejos prácticos para mejorar tu rendimiento y disfrutar más cada salida.
+        <section class="recomendaciones contenido">
+            <h2 class="titol">Consejos y rutas</h2>
+            <p class="text">
+                Te ofrecemos recomendaciones de entrenamiento, rutas ciclistas y consejos prácticos para mejorar tu
+                rendimiento y disfrutar más cada salida.
             </p>
         </section>
     </main>
