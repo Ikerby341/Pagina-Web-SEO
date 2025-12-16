@@ -1,0 +1,51 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecoCyc</title>
+    <link rel="stylesheet" href="./../public/css/styles.css">
+    <script defer src="./../public/js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><a href="../index.html">RecoCyc</a></h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="tipos.html" class="active">Tipos</a></li>
+                    <li><a href="accesorios.html">Accesorios</a></li>
+                    <li><a href="marcas.html">Marcas</a></li>
+                    <li><a href="recomendaciones.html">Recomendaciones</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="opiniones.html">Opiniones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>Opiniones de Usuarios</h1>
+            <p>
+                Descubre lo que otros ciclistas piensan sobre nuestras bicicletas y servicios. Tu opinión es importante para nosotros.
+            </p>
+        </section>
+        <h1>Envía tu opinión:</h1>
+        <form id="opinionForm">
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="comment">Comentario:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+
+            <button type="submit">Enviar Opinión</button>
+        </form>
+        <section>
+            <div id="Comentarios">
+                <h2>Comentarios Recientes</h2>
+            </div>
+    </main>
