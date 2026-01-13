@@ -9,9 +9,9 @@ const JSONBIN_API_KEY = '$2a$10$bP1980cy4E4tN4xjgmgj6OJJHTdiKQxg0e7Dc9OuxDlOnaJz
 const JSONBIN_URL = `https://api.jsonbin.io/v3/b/${JSONBIN_ID}`;
 
 // Load comments on page load
-window.addEventListener("DOMContentLoaded", cargarComentarios);
+// window.addEventListener("DOMContentLoaded", cargarComentarios);
 
-opinionForm.addEventListener("submit", enviarOpinion);
+// opinionForm.addEventListener("submit", enviarOpinion);
 
 async function cargarComentarios() {
     try {
