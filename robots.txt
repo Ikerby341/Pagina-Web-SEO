@@ -1,0 +1,10 @@
+# Permitir acceso a todos los bots
+User-agent: *
+Allow: /
+Disallow: /private/
+
+# Especificar la velocidad de rastreo (opcional)
+Crawl-delay: 1
+
+# Referencia al sitemap
+Sitemap: https://recocyc.pages.dev/sitemap.xml
