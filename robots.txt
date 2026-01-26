@@ -1,7 +1,7 @@
 # Permitir acceso a todos los bots
 User-agent: *
 Allow: /
-Disallow: /private/
+Disallow: /public/js/config.js
 
 # Especificar la velocidad de rastreo (opcional)
 Crawl-delay: 1
