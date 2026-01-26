@@ -1,0 +1,140 @@
+.contenido {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto 30px;
+    padding: 0 20px;
+}
+
+.contenido > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Sección pricnipal */
+.contenido.hero {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 40px 20px;
+    margin: 0 0 30px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contenido.hero h1 {
+    color: #333;
+    margin-top: 0;
+}
+
+.contenido.hero p {
+    color: #555;
+}
+
+/* Categorias  */
+.contenido:not(.hero) {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.contenido h1.titol {
+    font-size: 24px;
+    color: #333;
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent);
+}
+
+/* Cards de biciletas */
+.contenido div > div {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 12px;
+    height: 100%;
+}
+
+.contenido div > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.contenido h3 {
+    margin: 0 0 8px 0;
+    color: #333;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+.contenido p {
+    margin: 0 0 12px 0;
+    color: #666;
+    line-height: 1.4;
+    text-align: left;
+    flex-grow: 1;
+    font-size: 14px;
+}
+
+.contenido a {
+    display: inline-block;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin-top: auto;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.contenido a:hover {
+    color: #fff;
+    background: var(--accent);
+}
+
+/* Contenedor de imagen */
+.contenido > div > div > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 180px;
+}
+
+.contenido img {
+    max-width: 100%;
+    height: auto;
+    max-height: 160px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+/* Pantallas móviles */
+@media (max-width: 768px) {
+    .contenido {
+        padding: 20px 15px;
+    }
+
+    .contenido > div {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .contenido h1.titol {
+        font-size: 20px;
+    }
+
+    .contenido p {
+        font-size: 13px;
+    }
+}

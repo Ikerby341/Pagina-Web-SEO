@@ -1,0 +1,113 @@
+@import url('./main.css');
+@import url('./styles.css');
+
+.contenido {
+    width: 100%;
+    margin: 20px auto;
+    padding: 30px 20px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.contenido h1.titol-principal {
+    font-size: 28px;
+    color: #333;
+    margin: 0 0 20px 0;
+    border-bottom: 3px solid var(--accent);
+}
+
+.contenido > p.text {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.contenido > p.text a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contenido > p.text a:hover {
+    text-decoration: underline;
+}
+
+/* Formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: inherit;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(232, 73, 29, 0.1);
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+form button {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s, transform 0.2s;
+    align-self: flex-start;
+}
+
+form button:hover {
+    background: #d8491d;
+    transform: translateY(-2px);
+}
+
+form button:active {
+    transform: translateY(0);
+}
+
+/* Pantallas móviles */
+@media (max-width: 768px) {
+    .contenido {
+        padding: 20px 15px;
+    }
+
+    .contenido h1.titol-principal {
+        font-size: 24px;
+    }
+
+    form button {
+        width: 100%;
+        align-self: stretch;
+    }
+}
