@@ -7,7 +7,12 @@
 
     <!-- Google Analytics GA4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VL404K31TZ"></script>
-    <script defer src="public/js/googleanalytics.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VL404K31TZ');
+    </script>
 
     <title>RecoCyc | Guías, tipos y accesorios de bicicletas</title>
 
