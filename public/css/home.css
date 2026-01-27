@@ -57,6 +57,7 @@ section {
 
 /* Hero section */
 section.hero {
+    min-height: 30vh;
     padding: 46px 30px;
     background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
     text-align: center;
@@ -156,6 +157,7 @@ p {
     margin: 0;
     font-size: 0.95rem;
     line-height: 1.5;
+    max-width: 65ch;
 }
 
 /* Responsive */
