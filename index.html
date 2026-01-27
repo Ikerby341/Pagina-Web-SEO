@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="public/css/main.css" />
 
     <link rel="stylesheet" href="public/css/header.css" />
-    <link rel="stylesheet" href="public/css/home.css" />
+    <link rel="preload" href="public/css/home.css" as="style" onload="this.rel='stylesheet'">
     <link rel="stylesheet" href="public/css/footer.css" media="print" onload="this.media='all'"/>
 
     <link rel="icon" href="public/img/favicon.webp" type="image/x-icon" />
@@ -95,7 +95,7 @@
 
             <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false"
                 aria-controls="menu-principal">
-                <img src="public/img/desplegable.webp" alt="Icono Desplegable" aria-hidden="true" />
+                <img src="../public/img/desplegable.webp" width="24" height="24" alt="Icono Desplegable" aria-hidden="true" />
             </button>
         </div>
     </header>
