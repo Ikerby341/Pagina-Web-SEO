@@ -41,7 +41,7 @@
 .contenidoBread {
     max-width: 1200px;
     padding: 32px;
-    margin: 40px auto;
+    margin: 32px auto;
     background: #fff;
     border: 1px solid #e3e3e3;
     border-radius: 12px;
@@ -52,11 +52,45 @@
 section {
     max-width: 1200px;
     padding: 32px;
-    margin: 40px auto;
+    margin: 32px auto;
     background: #fff;
     border: 1px solid #e3e3e3;
     border-radius: 12px;
     text-wrap: balance;
+}
+
+/* Hero section */
+section.hero {
+    padding: 46px 30px;
+    background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+section.hero .titol-principal {
+    font-size: clamp(1.9rem, 2.2vw, 2.3rem);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: #111827;
+    max-width: 900px;
+    margin-bottom: 16px;
+}
+
+.contenido.hero .titol-principal {
+    text-transform: none;
+}
+
+section.hero p {
+    font-size: 1rem;
+    line-height: 1.55;
+    color: #4b5563;
+    max-width: 760px;
+    margin: 12px auto 0;
 }
 
 /* Títulos */
