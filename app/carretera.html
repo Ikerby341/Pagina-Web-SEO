@@ -1,24 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RecoCyc | Bicicletas de Carretera</title>
-    <link rel="stylesheet" href="/../public/css/tipos-detalle.css">
-    <script defer src="../public/js/config.js"></script>
+
+    <title>Bicicletas de Carretera: características y usos | RecoCyc</title>
+
+    <meta name="description"
+        content="Descubre qué son las bicicletas de carretera, sus características principales y usos recomendados. Guía de RecoCyc sobre bicicletas de ruta para velocidad y largo recorrido.">
+
+    <meta name="author" content="Equipo RecoCyc">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://recocyc.pages.dev/app/tipos/carretera.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Bicicletas de Carretera: características y usos">
+    <meta property="og:description"
+        content="Guía completa sobre bicicletas de carretera: qué son, para qué sirven y sus características principales.">
+    <meta property="og:url" content="https://recocyc.pages.dev/app/tipos/carretera.html">
+    <meta property="og:site_name" content="RecoCyc">
+    <meta property="og:image" content="https://recocyc.pages.dev/public/img/favicon.webp">
+    <meta property="og:image:alt" content="Bicicleta de Carretera - RecoCyc">
+
+    <link rel="stylesheet" href="../public/css/tipos-detalle.css">
     <link rel="icon" href="../public/img/favicon.webp" type="image/x-icon">
+
+    <script defer src="../public/js/config.js"></script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Bicicletas de Carretera",
+        "description": "Información sobre bicicletas de carretera, sus características y usos recomendados.",
+        "author": {
+            "@type": "Organization",
+            "name": "RecoCyc"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "RecoCyc",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://recocyc.pages.dev/public/img/favicon.webp"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://recocyc.pages.dev/app/tipos/carretera.html"
+        }
+    }
+    </script>
 </head>
+
 <body>
-    <header>
+
+    <!-- Accesibilidad -->
+    <a href="#contenido-principal" class="skip-link">
+        Saltar al contenido
+    </a>
+
+    <!-- HEADER -->
+    <header role="banner">
         <div class="container">
             <div class="logotip">
-                <h1><a href="../index.html">RecoCyc</a></h1>
+                <a href="../index.html" class="logo">
+                    RecoCyc
+                </a>
             </div>
 
-            <nav>
+            <nav id="menu-principal" aria-label="Navegación principal">
                 <ul>
                     <li><a href="montana.html">Montaña</a></li>
-                    <li><a href="carretera.html" class="active">Carretera</a></li>
+                    <li><a href="carretera.html" class="active" aria-current="page">Carretera</a></li>
                     <li><a href="urbanas.html">Urbanas</a></li>
                     <li><a href="electricas.html">Eléctricas</a></li>
                     <li><a href="hibridas.html">Híbridas</a></li>
@@ -26,64 +84,78 @@
                 </ul>
             </nav>
 
-            <div class="menu-toggle" id="menu-toggle">
-<img src="./../public/img/desplegable.webp" alt="Icono desplegable">
-            </div>
-
-            <div class="mobile-menu" id="mobile-menu">
-                <ul>
-                    <li><a href="montana.html">Montaña</a></li>
-                    <li><a href="carretera.html">Carretera</a></li>
-                    <li><a href="urbanas.html">Urbanas</a></li>
-                    <li><a href="electricas.html">Eléctricas</a></li>
-                    <li><a href="hibridas.html">Híbridas</a></li>
-                    <li><a href="bmx.html">BMX</a></li>
-                </ul>
-            </div>
-
-            <div class="menu-toggle" id="menu-toggle">
-<img src="./../public/img/desplegable.webp" alt="Icono desplegable">
-            </div>
-
-            <div class="mobile-menu" id="mobile-menu">
-                <ul>
-                    <li><a href="montana.html">Montaña</a></li>
-                    <li><a href="carretera.html">Carretera</a></li>
-                    <li><a href="urbanas.html">Urbanas</a></li>
-                    <li><a href="electricas.html">Eléctricas</a></li>
-                    <li><a href="hibridas.html">Híbridas</a></li>
-                    <li><a href="bmx.html">BMX</a></li>
-                </ul>
-            </div>
+            <button class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Abrir menú de navegación"
+                aria-expanded="false"
+                aria-controls="menu-principal">
+                <img src="../public/img/desplegable.webp" alt="" aria-hidden="true">
+            </button>
         </div>
     </header>
 
-    <main>
+    <!-- MAIN -->
+    <main id="contenido-principal" role="main">
+        <!-- Breadcrumbs -->
+        <nav aria-label="Ruta de navegación" class="contenido">
+            <p class="breadcrumbs">
+                <a href="../index.html">Inicio</a> › <a href="../app/tipos.html">Tipos</a> › <span>Carretera</span>
+            </p>
+        </nav>
+
         <!-- Hero -->
-        <section>
-            <h1>Bicicletas de Carretera</h1>
-            <p>
-                Diseñadas para velocidad en asfalto. Son ligeras, con neumáticos finos y manillar curvado para mejorar la aerodinámica.
+        <section class="contenido">
+            <h1 class="titol-principal">
+                Bicicletas de Carretera
+            </h1>
+
+            <p class="text">
+                Diseñadas para velocidad y eficiencia en superficies pavimentadas. 
+                Ligeras, con neumáticos delgados y manillares curvos para posiciones 
+                aerodinámicas y largas distancias.
             </p>
         </section>
 
-        <!-- Información adicional -->
-        <section>
+        <!-- Información -->
+        <section class="contenido">
             <div class="columnas-contenido">
+
                 <div class="col">
-                    <h2>Características principales</h2>
-                    <p>
-                        Las bicicletas de carretera priorizan la velocidad y la eficiencia. Tienen cuadros ligeros, ruedas de alto perfil y componentes aerodinámicos para minimizar la resistencia al viento.
+                    <h2 class="titol">
+                        Características principales
+                    </h2>
+                    <p class="text">
+                        Las bicicletas de carretera destacan por su ligereza, cuadros de 
+                        aluminio o fibra de carbono, neumáticos delgados de alta presión, 
+                        manillares drop y componentes enfocados en la velocidad y la 
+                        eficiencia aerodinámica.
                     </p>
                 </div>
+
                 <div class="col">
-                    <h2>Usos recomendados</h2>
-                    <p>
-                        Ideales para rutas pavimentadas, competiciones de ciclismo en carretera o entrenamientos de larga distancia en asfalto.
+                    <h2 class="titol">
+                        Usos recomendados
+                    </h2>
+                    <p class="text">
+                        Ideales para entrenamientos en carretera, competiciones, rutas 
+                        de largo recorrido, cicloturismo en asfalto y para ciclistas que 
+                        buscan velocidad y rendimiento en superficies pavimentadas.
                     </p>
                 </div>
+
             </div>
         </section>
+
     </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <p>
+            &copy; <span id="year"></span>
+            <span class="visually-hidden">Copyright</span>
+            RecoCyc · Información y recursos sobre ciclismo
+        </p>
+    </footer>
+
 </body>
 </html>

@@ -24,7 +24,6 @@ async function cargarComentarios() {
             comments.forEach(comment => {
                 const comentarioElement = document.createElement("div");
                 comentarioElement.innerHTML = `
-                    <hr>
                     <h3>👤 ${comment.username}</h3>
                     <p>💬 ${comment.comment}</p>
                 `;

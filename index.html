@@ -1,31 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RecoCyc | Bicicletas, accesorios y recomendaciones</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="RecoCyc es una plataforma sobre ciclismo donde encontrarás tipos de bicicletas, accesorios, marcas y recomendaciones para ciclistas de todos los niveles.">
+    <title>RecoCyc | Guías, tipos de bicicletas y accesorios de ciclismo</title>
+
+    <meta name="description"
+        content="RecoCyc es una plataforma especializada en ciclismo donde descubrirás tipos de bicicletas, accesorios, marcas y recomendaciones para ciclistas principiantes y expertos." />
+
+    <meta name="author" content="Equipo RecoCyc" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Contenido | Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="RecoCyc | Todo sobre bicicletas y ciclismo">
-    <meta property="og:description" content="Descubre tipos de bicicletas, accesorios, marcas y consejos para disfrutar del ciclismo al máximo.">
-    <meta name="keywords" content="bicicletas, tipos de bicicletas, bicicletas de montaña, bicicletas de carretera, ciclismo, accesorios para bicicletas">
+    <meta property="og:url" content="https://recocyc.pages.dev/" />
+    <meta property="og:title" content="RecoCyc | Todo sobre bicicletas y ciclismo" />
+    <meta property="og:description"
+        content="Descubre guías, tipos de bicicletas, accesorios y recomendaciones para disfrutar del ciclismo." />
+    <meta property="og:site_name" content="RecoCyc" />
+    <meta property="og:image" content="https://recocyc.pages.dev/public/img/favicon.webp">
+    <meta property="og:image:alt" content="RecoCyc - Plataforma de ciclismo">
 
-    <link rel="stylesheet" href="public/css/main.css">
-    <link rel="stylesheet" href="public/css/styles.css">
-    <link rel="icon" href="public/img/favicon.webp" type="image/x-icon">
+    <link rel="canonical" href="https://recocyc.pages.dev/" />
+
+    <link rel="stylesheet" href="public/css/home.css" />
+    <link rel="icon" href="public/img/favicon.webp" type="image/x-icon" />
 
     <script src="public/js/config.js" defer></script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "RecoCyc",
+        "url": "https://recocyc.pages.dev/",
+        "description": "Plataforma especializada en ciclismo con guías, tipos de bicicletas, accesorios, marcas y recomendaciones para ciclistas de todos los niveles.",
+        "inLanguage": "es",
+        "publisher": {
+          "@type": "Organization",
+          "name": "RecoCyc",
+          "url": "https://recocyc.pages.dev/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://recocyc.pages.dev/public/img/favicon.webp"
+          }
+        }
+      }
+    </script>
 </head>
 
 <body>
-    <header>
+    <!-- Accesibilidad | Saltar al contenido -->
+    <a href="#contenido-principal" class="skip-link">
+        Saltar al contenido
+    </a>
+
+    <!-- HEADER-->
+    <header role="banner">
         <div class="container">
             <div class="logotip">
-                <h1><a class="active" href="index.html">RecoCyc</a></h1>
+                <a href="index.html" class="logo active" aria-current="page">
+                    RecoCyc
+                </a>
             </div>
-            <nav>
+
+            <nav id="menu-principal" aria-label="Navegación principal">
                 <ul>
                     <li><a href="app/tipos.html">Tipos</a></li>
                     <li><a href="app/accesorios.html">Accesorios</a></li>
@@ -36,67 +78,83 @@
                 </ul>
             </nav>
 
-            <div class="menu-toggle" id="menu-toggle">
-<img src="public/img/desplegable.webp" alt="Icono desplegable">
-            </div>
-
-            <div class="mobile-menu" id="mobile-menu">
-                <ul>
-                    <li><a href="app/tipos.html">Tipos</a></li>
-                    <li><a href="app/accesorios.html">Accesorios</a></li>
-                    <li><a href="app/marcas.html">Marcas</a></li>
-                    <li><a href="app/recomendaciones.html">Recomendaciones</a></li>
-                    <li><a href="opiniones.html">Opiniones</a></li>
-                    <li><a href="app/contacto.html">Contacto</a></li>
-                </ul>
-            </div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false"
+                aria-controls="menu-principal">
+                <img src="public/img/desplegable.webp" alt="Icono Desplegable" aria-hidden="true" />
+            </button>
         </div>
     </header>
 
-    <main>
-        <!-- Hero principal -->
-        <section class="hero contenido">
-            <h1 class="titol-principal">Bienvenido a RecoCyc</h1>
+    <main id="contenido-principal" role="main">
+        <!-- HERO -->
+        <section class="hero contenido" aria-labelledby="hero-title">
+            <h1 id="hero-title" class="titol-principal">
+                Guías prácticas sobre bicicletas, accesorios y ciclismo
+            </h1>
+
             <p class="text">
-                RecoCyc es una plataforma dedicada al mundo del ciclismo. Aquí encontrarás información sobre bicicletas, accesorios, marcas y consejos para mejorar tu experiencia sobre dos ruedas.
+                En RecoCyc te ayudamos a elegir la bicicleta adecuada, los accesorios
+                imprescindibles y el equipamiento ideal para disfrutar del ciclismo,
+                tanto si estás empezando como si ya tienes experiencia.
+            </p>
+
+        </section>
+
+        <!-- SOBRE NOSOTROS -->
+        <section class="about contenido" aria-labelledby="about-title">
+            <h2 class="titol" id="about-title">¿Qué es RecoCyc?</h2>
+
+            <p class="text">
+                RecoCyc es una plataforma informativa dedicada al mundo del ciclismo.
+                Ofrecemos guías claras, comparativas y recomendaciones para ayudarte
+                a tomar mejores decisiones al elegir bicicletas, accesorios y marcas.
             </p>
         </section>
 
-        <!-- Sección sobre nosotros -->
-        <section class="about contenido">
-            <h2 class="titol">¿Qué es RecoCyc?</h2>
-            <p class="text">
-                Nuestro objetivo es acercar el ciclismo a todos: desde principiantes que buscan su primera bicicleta hasta ciclistas experimentados que quieren optimizar su rendimiento. 
-                Compartimos guías, recomendaciones y recursos para que disfrutes del ciclismo de manera segura y apasionante.
-            </p>
-        </section>
+        <!-- CATEGORÍAS -->
+        <section class="features contenido" aria-labelledby="features-title">
+            <h2 class="titol" id="features-title">
+                Explora nuestras principales categorías de ciclismo
+            </h2>
 
-        <!-- Sección de categorías destacadas -->
-        <section class="features contenido">
-            <div class="container">
-                <div class="subcontenido">
+            <div class="features-grid">
+                <article class="feature-card">
                     <h3 class="subtitol">Tipos de bicicletas</h3>
-                    <p class="text">Descubre las diferencias entre bicicletas de montaña, carretera, urbanas y más.</p>
-                </div>
-                <div class="subcontenido">
-                    <h3 class="subtitol">Accesorios esenciales</h3>
-                    <p class="text">Cascos, luces, ropa técnica y todo lo que necesitas para pedalear con seguridad.</p>
-                </div>
-                <div class="subcontenido">
-                    <h3 class="subtitol">Marcas destacadas</h3>
-                    <p class="text">Conoce las principales marcas del mercado y sus modelos más recomendados.</p>
-                </div>
+                    <p class="text">
+                        Guías completas sobre bicicletas de montaña, carretera, urbanas y
+                        eléctricas. Aprende las diferencias entre cada tipo y descubre cuál
+                        se adapta mejor a tu forma de pedalear.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <h3 class="subtitol">Accesorios para ciclistas</h3>
+                    <p class="text">
+                        Descubre los accesorios esenciales para ciclistas: cascos, luces,
+                        ropa técnica y equipamiento de seguridad para mejorar tu comodidad
+                        y protección en cada salida.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <h3 class="subtitol">Marcas de bicicletas</h3>
+                    <p class="text">
+                        Análisis y recomendaciones de las marcas de bicicletas más populares
+                        del mercado, con información clara sobre calidad, precios y modelos
+                        destacados.
+                    </p>
+                </article>
             </div>
         </section>
-
-        <!-- Sección de recomendaciones -->
-        <section class="recommendations contenido">
-            <h2 class="titol">Consejos y rutas</h2>
-            <p class="text">
-                Te ofrecemos recomendaciones de entrenamiento, rutas ciclistas y consejos prácticos para mejorar tu rendimiento y disfrutar más cada salida.
-            </p>
-        </section>
     </main>
+
+    <footer class="footer" role="contentinfo">
+        <p>
+            &copy; <span id="year"></span>
+            <span class="visually-hidden">Copyright</span>
+            RecoCyc · Información y recursos sobre ciclismo
+        </p>
+    </footer>
 </body>
 
 </html>

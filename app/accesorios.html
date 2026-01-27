@@ -1,28 +1,84 @@
-<!DOCTYPE html>
-<html lang="ca">
+<!doctype html>
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RecoCyc | Accesorios indispensables</title>
-    <link rel="stylesheet" href="../public/css/main.css" />
-    <link rel="stylesheet" href="../public/css/header.css" />
-    <link rel="stylesheet" href="../public/css/styles.css" />
-    <link rel="stylesheet" href="../public/css/accesorios.css">
-    <script defer src="../public/js/config.js"></script>
-    <link rel="icon" href="../public/img/favicon.webp" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Accesorios indispensables para ciclistas | RecoCyc</title>
+
+    <meta name="description"
+        content="Descubre los accesorios indispensables para ciclistas: cascos, luces, guantes, gafas, GPS, bidones y más. Mejora tu seguridad y comodidad al pedalear." />
+
+    <meta name="author" content="Equipo RecoCyc" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://recocyc.pages.dev/app/accesorios.html" />
+    <meta property="og:title" content="Accesorios indispensables para ciclistas | RecoCyc" />
+    <meta property="og:description"
+        content="Guía completa de accesorios esenciales para ciclistas: seguridad, comodidad y rendimiento." />
+    <meta property="og:site_name" content="RecoCyc" />
+    <meta property="og:image" content="https://recocyc.pages.dev/public/img/favicon.webp" />
+    <meta property="og:image:alt" content="RecoCyc - Accesorios de ciclismo" />
+
+    <link rel="canonical" href="https://recocyc.pages.dev/app/accesorios.html" />
+
+    <link rel="stylesheet" href="../public/css/accesorios.css" />
+    <link rel="icon" href="../public/img/favicon.webp" type="image/x-icon" />
+
+    <script src="../public/js/config.js" defer></script>
+    <script src="../public/js/modal.js" defer></script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Accesorios indispensables para ciclistas",
+      "description": "Guía completa de accesorios de ciclismo para mejorar seguridad, comodidad y rendimiento.",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "RecoCyc"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "RecoCyc",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://recocyc.pages.dev/public/img/favicon.webp"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://recocyc.pages.dev/app/accesorios.html"
+      }
+    }
+    </script>
 </head>
 
 <body>
-    <header>
+
+    <!-- Accesibilidad | Saltar al contenido -->
+    <a href="#contenido-principal" class="skip-link">
+        Saltar al contenido
+    </a>
+
+    <!-- HEADER -->
+    <header role="banner">
         <div class="container">
             <div class="logotip">
-                <h1><a href="../index.html">RecoCyc</a></h1>
+                <a href="../index.html" class="logo">
+                    RecoCyc
+                </a>
             </div>
-            <nav>
+
+            <nav id="menu-principal" aria-label="Navegación principal">
                 <ul>
                     <li><a href="tipos.html">Tipos</a></li>
-                    <li><a href="accesorios.html" class="active">Accesorios</a></li>
+                    <li><a href="accesorios.html" class="active" aria-current="page">Accesorios</a></li>
                     <li><a href="marcas.html">Marcas</a></li>
                     <li><a href="recomendaciones.html">Recomendaciones</a></li>
                     <li><a href="opiniones.html">Opiniones</a></li>
@@ -30,287 +86,274 @@
                 </ul>
             </nav>
 
-            <div class="menu-toggle" id="menu-toggle">
-<img src="../public/img/desplegable.webp" alt="Icono desplegable">
-            </div>
-
-            <div class="mobile-menu" id="mobile-menu">
-                <ul>
-                    <li><a href="tipos.html">Tipos</a></li>
-                    <li><a href="accesorios.html">Accesorios</a></li>
-                    <li><a href="marcas.html">Marcas</a></li>
-                    <li><a href="recomendaciones.html">Recomendaciones</a></li>
-                    <li><a href="opiniones.html">Opiniones</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Abrir menú de navegación"
+                aria-expanded="false"
+                aria-controls="menu-principal">
+                <img src="../public/img/desplegable.webp" alt="" aria-hidden="true" />
+            </button>
         </div>
     </header>
 
-    <main>
-        <section class="contenedor">
-            <h1 class="titol-principal">Accesorios indispensables para ciclistas</h1>
-            <p>Estos accesorios mejoran tu seguridad, comodidad y rendimiento en cada salida. Todos disponibles en
-                tiendas de España.</p>
+    <!-- MAIN -->
+    <main id="contenido-principal" role="main">
+        <!-- Breadcrumbs -->
+        <nav aria-label="Ruta de navegación" class="contenidoBread">
+            <p class="breadcrumbs">
+                <a href="../index.html">Inicio</a> › <span>Accesorios</span>
+            </p>
+        </nav>
+
+        <!-- HERO -->
+        <section class="hero contenido-principal" aria-labelledby="accesorios-title">
+            <h1 id="accesorios-title" class="titol-principal">
+                Accesorios indispensables para ciclistas
+            </h1>
+
+            <p class="text">
+                Estos accesorios mejoran tu seguridad, comodidad y rendimiento en cada salida.
+                Selección recomendada y disponible en tiendas de España.
+            </p>
         </section>
 
-        <!-- Lista de accesorios -->
-        <section class="accesorios">
+        <!-- LISTADO -->
+        <section class="accesorios" aria-labelledby="listado-title">
+            <h2 id="listado-title" class="section-title">
+                Listado de accesorios de ciclismo
+            </h2>
+
             <div class="contenido">
 
-                <!-- Casco -->
-                <div class="accesorio-card">
-                    <h2 class="producte">🚴 Casco Giro Synthe MIPS II</h2>
+                <article class="accesorio-card">
+                    <h3 class="producte">🚴 Casco Giro Synthe MIPS II</h3>
                     <p class="descripcio">
                         Casco ligero y aerodinámico con tecnología MIPS para mayor protección en carretera.
                     </p>
-                    <div class="imatge">
-                        <img src="./../public/img/casco-giro.webp" alt="Casco Giro Synthe MIPS II"
-                            class="w-full rounded-lg shadow">
+                    <div class="imatge" data-url="https://www.decathlon.es/es/p/mp/giro/casco-giro-synthe-ii-mips-blanco-plata/_/R-p-819edf6a-bd1f-400b-aecc-33ecd1c5a83b?mc=819edf6a-bd1f-400b-aecc-33ecd1c5a83b_c1&c=negro">
+                        <img src="../public/img/casco-giro.webp" alt="Casco Giro Synthe MIPS II" loading="lazy">
                     </div>
-                    <button class="boton">
-                        <a href="https://www.decathlon.es/es/p/mp/giro/casco-giro-synthe-ii-mips-blanco-plata/_/R-p-819edf6a-bd1f-400b-aecc-33ecd1c5a83b?mc=819edf6a-bd1f-400b-aecc-33ecd1c5a83b_c1&c=negro"
-                            target="_blank">Decathlon España</a>
-                    </button>
-                </div>
+                    <a class="boton" href="https://www.decathlon.es/es/p/mp/giro/casco-giro-synthe-ii-mips-blanco-plata/_/R-p-819edf6a-bd1f-400b-aecc-33ecd1c5a83b?mc=819edf6a-bd1f-400b-aecc-33ecd1c5a83b_c1&c=negro" target="_blank" rel="noopener">
+                        Comprar en Decathlon
+                    </a>
+                </article>
 
-                <!-- Luces -->
-                <div class="accesorio-card">
-                    <h2 class="producte">🔦 Luz delantera recargable 6000 lúmenes</h2>
+                <article class="accesorio-card">
+                    <h3 class="producte">🔦 Luz delantera recargable 6000 lúmenes</h3>
                     <p class="descripcio">
                         Faro impermeable de alta potencia para rutas nocturnas, con batería recargable y varios modos.
                     </p>
-                    <div class="imatge">
-                        <img src="./../public/img/luces-bontrager.webp" alt="Luz delantera ciclismo"
-                            class="w-full rounded-lg shadow">
+                    <div class="imatge" data-url="https://www.fruugo.es/luz-de-bicicleta-delantera-recargable-de-6000-lumenes-faro-impermeable-de-5-led-con-paquete-de-baterias-3-modos-para-ciclismo-y-conduccion-nocturna/p-416091373-878126882">
+                        <img src="../public/img/luces-bontrager.webp" alt="Luz delantera ciclismo" loading="lazy">
                     </div>
-                    <button class="boton">
-                        <a href="https://www.fruugo.es/luz-de-bicicleta-delantera-recargable-de-6000-lumenes-faro-impermeable-de-5-led-con-paquete-de-baterias-3-modos-para-ciclismo-y-conduccion-nocturna/p-416091373-878126882"
-                            target="_blank">Fruugo España</a>
-                    </button>
-                </div>
+                    <a class="boton" href="https://www.fruugo.es/luz-de-bicicleta-delantera-recargable-de-6000-lumenes-faro-impermeable-de-5-led-con-paquete-de-baterias-3-modos-para-ciclismo-y-conduccion-nocturna/p-416091373-878126882" target="_blank" rel="noopener">
+                        Comprar en Fruugo
+                    </a>
+                </article>
 
-                <!-- Guantes -->
-                <div class="accesorio-card">
-                    <h2 class="productes">🧤 Guantes Specialized Body Geometry Grail</h2>
+                <article class="accesorio-card">
+                    <h3 class="producte">🧤 Guantes Specialized Body Geometry Grail</h3>
                     <p class="descripcio">
-                        Guantes ergonómicos con acolchado de gel Equalizer™, reducen el entumecimiento y mejoran la
-                        comodidad.
+                        Guantes ergonómicos con acolchado de gel Equalizer™, reducen el entumecimiento y mejoran la comodidad.
                     </p>
-                    <div class="imatge">
-                        <img src="./../public/img/guantes-specialized.webp" alt="Guantes Specialized Body Geometry"
-                            class="w-full rounded-lg shadow">
+                    <div class="imatge" data-url="https://www.tradeinn.com/bikeinn/es/specialized-guantes-body-geometry-grail/137571228/p">
+                        <img src="../public/img/guantes-specialized.webp" alt="Guantes Specialized Body Geometry" loading="lazy">
                     </div>
-                    <button class="boton">
-                        <a href="https://www.tradeinn.com/bikeinn/es/specialized-guantes-body-geometry-grail/137571228/p"
-                            target="_blank">Bikeinn
-                            España</a>
-                    </button>
-                </div>
+                    <a class="boton" href="https://www.tradeinn.com/bikeinn/es/specialized-guantes-body-geometry-grail/137571228/p" target="_blank" rel="noopener">
+                        Comprar en Bikeinn
+                    </a>
+                </article>
 
-                <!-- Bidón -->
-                <div class="accesorio-card">
-                    <h2 class="producte">💧 Bidón CamelBak Podium Chill 620ml</h2>
+                <article class="accesorio-card">
+                    <h3 class="producte">💧 Bidón CamelBak Podium Chill 620ml</h3>
                     <p class="descripcio">
                         Bidón aislado de doble pared que mantiene el agua fría el doble de tiempo. Libre de BPA.
                     </p>
-                    <div class="imatge">
-                        <img src="./../public/img/bidon-camelbak.webp" alt="Bidón CamelBak Podium Chill"
-                            class="w-full rounded-lg shadow">
+                    <div class="imatge" data-url="https://hispanoracing.com/articulo/camelbak-bidon-de-ciclismo-podium-chill-620ml-blanco-rojo">
+                        <img src="../public/img/bidon-camelbak.webp" alt="Bidón CamelBak Podium Chill" loading="lazy">
                     </div>
-                    <button class="boton">
-                        <a href="https://hispanoracing.com/articulo/camelbak-bidon-de-ciclismo-podium-chill-620ml-blanco-rojo"
-                            target="_blank">HispanoRacing
-                            España</a>
-                    </button>
-                </div>
+                    <a class="boton" href="https://hispanoracing.com/articulo/camelbak-bidon-de-ciclismo-podium-chill-620ml-blanco-rojo" target="_blank" rel="noopener">
+                        Comprar en HispanoRacing
+                    </a>
+                </article>
 
-                <!-- Multiherramienta -->
-                <div class="accesorio-card">
-                    <h2 class="producte">🔧 Multiherramienta Topeak Mini 20 Pro</h2>
+                <article class="accesorio-card">
+                    <h3 class="producte">🔧 Multiherramienta Topeak Mini 20 Pro</h3>
                     <p class="descripcio">
-                        Compacta y ligera, con 20 funciones para reparaciones rápidas en ruta. Incluye llaves,
-                        destornilladores y herramienta para cadenas.
+                        Compacta y ligera, con 20 funciones para reparaciones rápidas en ruta. Incluye llaves, destornilladores y herramienta para cadenas.
                     </p>
-                    <div class="imatge">
-                        <img src="./../public/img/topeak-multiherramienta.webp"
-                            alt="Multiherramienta Topeak Mini 20 Pro" class="w-full rounded-lg shadow">
+                    <div class="imatge" data-url="https://www.tradeinn.com/bikeinn/es/topeak-multiherramienta-mini-20-pro/137556541/p">
+                        <img src="../public/img/topeak-multiherramienta.webp" alt="Multiherramienta Topeak Mini 20 Pro" loading="lazy">
                     </div>
-                    <button class="boton">
-                        <a href="https://www.tradeinn.com/bikeinn/es/topeak-multiherramienta-mini-20-pro/137556541/p"
-                            target="_blank">Bikeinn
-                            España</a>
-                    </button>
-                </div>
+                    <a class="boton" href="https://www.tradeinn.com/bikeinn/es/topeak-multiherramienta-mini-20-pro/137556541/p" target="_blank" rel="noopener">
+                        Comprar en Bikeinn
+                    </a>
+                </article>
 
-                <!-- Candado -->
-                <div class="accesorio-card">
-                    <h2 class="producte">🔒 Candado Kryptonite Evolution Mini-7</h2>
+                <article class="accesorio-card">
+                    <h3 class="producte">🔒 Candado Kryptonite Evolution Mini-7</h3>
                     <p class="descripcio">
                         Candado en U de alta seguridad, resistente a cortes y palancas. Incluye cable adicional.
                     </p>
-                    <div class="imatge">
-                        <img src="./../public/img/kryptonite-candado-en-u-mini-7.webp"
-                            alt="Candado Kryptonite Evolution Mini-7" class="w-full rounded-lg shadow">
+                    <div class="imatge" data-url="https://www.tradeinn.com/bikeinn/es/kryptonite-candado-en-u-mini-7/136394611/p">
+                        <img src="../public/img/kryptonite-candado-en-u-mini-7.webp" alt="Candado Kryptonite Evolution Mini-7" loading="lazy">
                     </div>
-                    <button class="boton">
-                        <a href="https://www.tradeinn.com/bikeinn/es/kryptonite-candado-en-u-mini-7/136394611/p?utm_source=google_products&utm_medium=merchant&id_producte=4710991&country=es&gad_source=1&gad_campaignid=23190453504&gbraid=0AAAAADvzHL8KwXOI0XA-ww_MJ-r9g0cjG&gclid=CjwKCAiAlrXJBhBAEiwA-5pgwkipEdNHAdaJ5_kSQAI9S_scd-ItazKFtz8mVboRYI17nshBcKiFtBoCjV8QAvD_BwE&gclsrc=aw.ds"
-                            target="_blank">Bikeinn
-                            España</a>
-                    </button>
-                </div>
+                    <a class="boton" href="https://www.tradeinn.com/bikeinn/es/kryptonite-candado-en-u-mini-7/136394611/p" target="_blank" rel="noopener">
+                        Comprar en Bikeinn
+                    </a>
+                </article>
 
-                <!-- Gafas -->
-                <div class="accesorio-card">
-                    <h2 class="producte">🕶️ Gafas Oakley Sutro Lite</h2>
+                <article class="accesorio-card">
+                    <h3 class="producte">🕶️ Gafas Oakley Sutro Lite</h3>
                     <p class="descripcio">
                         Gafas deportivas con lentes Prizm™ que mejoran el contraste y la visibilidad en carretera.
                     </p>
-                    <div class="imatge">
-                        <img src="./../public/img/gafas-sutro-lite.webp" alt="Gafas Oakley Sutro Lite"
-                            class="w-full rounded-lg shadow">
+                    <div class="imatge" data-url="https://www.oakley.com/es-es/product/W0OO9463">
+                        <img src="../public/img/gafas-sutro-lite.webp" alt="Gafas Oakley Sutro Lite" loading="lazy">
                     </div>
-                    <button class="boton">
-                        <a href="https://www.oakley.com/es-es/product/W0OO9463" target="_blank">Oakley
-                            España</a>
-                    </button>
-                </div>
+                    <a class="boton" href="https://www.oakley.com/es-es/product/W0OO9463" target="_blank" rel="noopener">
+                        Comprar en Oakley
+                    </a>
+                </article>
 
-                <!-- Culotte -->
-                <div class="accesorio-card">
-                    <h2 class="producte">👖 Culotte corto Santini Redux</h2>
+                <article class="accesorio-card">
+                    <h3 class="producte">👖 Culotte corto Santini Redux</h3>
                     <p class="descripcio">
                         Culotte de alta gama con badana ergonómica, ideal para largas distancias.
                     </p>
-                    <div class="imatge">
-                        <img src="./../public/img/redux-speed-culotes.webp" alt="Culotte Santini Redux"
-                            class="w-full rounded-lg shadow">
+                    <div class="imatge" data-url="https://www.santinicycling.com/es/culottes-cortos-de-ciclismo-hombre/redux-speed-culotes-4593.html">
+                        <img src="../public/img/redux-speed-culotes.webp" alt="Culotte Santini Redux" loading="lazy">
                     </div>
-                    <button class="boton">
-                        <a href="https://www.santinicycling.com/es/culottes-cortos-de-ciclismo-hombre/redux-speed-culotes-4593.html?srsltid=AfmBOooKLw60GDYp9U4IGW9oVc9M-zx9ciLFq0pZ9Uy5OIo_OYdGAm7j"
-                            target="_blank">Santini
-                            España</a>
-                    </button>
-                </div>
+                    <a class="boton" href="https://www.santinicycling.com/es/culottes-cortos-de-ciclismo-hombre/redux-speed-culotes-4593.html" target="_blank" rel="noopener">
+                        Comprar en Santini
+                    </a>
+                </article>
 
-                <!-- Zapatillas -->
-                <div class="accesorio-card">
-                    <h2 class="producte">👟 Zapatillas Shimano RC7</h2>
+                <article class="accesorio-card">
+                    <h3 class="producte">👟 Zapatillas Shimano RC7</h3>
                     <p class="descripcio">
                         Zapatillas de carretera con suela rígida de carbono y ajuste BOA para máximo rendimiento.
                     </p>
-                    <div class="imatge">
-                        <img src="./../public/img/zapatillas-SH-RC703.webp" alt="Zapatillas Shimano RC7"
-                            class="w-full rounded-lg shadow">
+                    <div class="imatge" data-url="https://bike.shimano.com/es-ES/products/apparel/pdp.P-SH-RC703.html">
+                        <img src="../public/img/zapatillas-SH-RC703.webp" alt="Zapatillas Shimano RC7" loading="lazy">
                     </div>
-                    <button class="boton">
-                        <a href="https://bike.shimano.com/es-ES/products/apparel/pdp.P-SH-RC703.html"
-                            target="_blank">Shimano España</a>
-                    </button>
-                </div>
+                    <a class="boton" href="https://bike.shimano.com/es-ES/products/apparel/pdp.P-SH-RC703.html" target="_blank" rel="noopener">
+                        Comprar en Shimano
+                    </a>
+                </article>
 
-                <!-- GPS -->
-                <div class="accesorio-card">
-                    <h2 class="producte">📡 Garmin Edge 530</h2>
+                <article class="accesorio-card">
+                    <h3 class="producte">📡 Garmin Edge 530</h3>
                     <p class="descripcio">
                         Ciclocomputador con GPS, métricas avanzadas de rendimiento y mapas de rutas.
                     </p>
-                    <div class="imatge">
-                        <img src="./../public/img/garmin-edge-530.webp" alt="Garmin Edge 530"
-                            class="w-full rounded-lg shadow">
+                    <div class="imatge" data-url="https://www.garmin.com/es-ES/p/621224">
+                        <img src="../public/img/garmin-edge-530.webp" alt="Garmin Edge 530" loading="lazy">
                     </div>
-                    <button class="boton">
-                        <a href="https://www.garmin.com/es-ES/p/621224" target="_blank"
-                            class="text-blue-600 font-medium hover:underline">Garmin España</a>
-                    </button>
-                </div>
+                    <a class="boton" href="https://www.garmin.com/es-ES/p/621224" target="_blank" rel="noopener">
+                        Comprar en Garmin
+                    </a>
+                </article>
 
-                <!-- Bomba -->
-                <div class="accesorio-card">
-                    <h2 class="producte">🛠️ Bomba portátil Lezyne Pocket Drive</h2>
+                <article class="accesorio-card">
+                    <h3 class="producte">🛠️ Bomba portátil Lezyne Pocket Drive</h3>
                     <p class="descripcio">
                         Bomba compacta y ligera, compatible con válvulas Presta y Schrader.
                     </p>
-                    <div class="imatge">
-                        <img src="./../public/img/lezyne-mini-bomba-pocket-drive.webp" alt="Bomba Lezyne Pocket Drive"
-                            class="w-full rounded-lg shadow">
+                    <div class="imatge" data-url="https://www.tradeinn.com/bikeinn/es/lezyne-mini-bomba-pocket-drive/137533983/p">
+                        <img src="../public/img/lezyne-mini-bomba-pocket-drive.webp" alt="Bomba Lezyne Pocket Drive" loading="lazy">
                     </div>
-                    <button class="boton">
-                        <a href="https://www.tradeinn.com/bikeinn/es/lezyne-mini-bomba-pocket-drive/137533983/p?utm_source=google_products&utm_medium=merchant&id_producte=10589361&country=es&gad_source=1&gad_campaignid=23190453504&gbraid=0AAAAADvzHL8KwXOI0XA-ww_MJ-r9g0cjG&gclid=CjwKCAiAlrXJBhBAEiwA-5pgwi46jK4CaOdyTxmhLBfGpjuZkxfAXS6CX3YrHm63zHFo2iAXweDkPxoCkesQAvD_BwE&gclsrc=aw.ds"
-                            target="_blank">Bikeinn
-                            España</a>
-                    </button>
-                </div>
+                    <a class="boton" href="https://www.tradeinn.com/bikeinn/es/lezyne-mini-bomba-pocket-drive/137533983/p" target="_blank" rel="noopener">
+                        Comprar en Bikeinn
+                    </a>
+                </article>
 
-                <!-- Portabidón -->
-                <div class="accesorio-card">
-                    <h2 class="producte">🥤 Portabidón Elite Custom Race Plus</h2>
+                <article class="accesorio-card">
+                    <h3 class="producte">🥤 Portabidón Elite Custom Race Plus</h3>
                     <p class="descripcio">
                         Portabidón ligero y resistente, con agarre seguro incluso en terrenos irregulares.
                     </p>
-                    <div class="imatge">
-                        <img src="./../public/img/elite-portabidon-custom-race-plus-skin.webp"
-                            alt="Portabidón Elite Custom Race Plus" class="w-full rounded-lg shadow">
+                    <div class="imatge" data-url="https://www.tradeinn.com/bikeinn/es/elite-portabidon-custom-race-plus-skin/137515645/p">
+                        <img src="../public/img/elite-portabidon-custom-race-plus-skin.webp" alt="Portabidón Elite Custom Race Plus" loading="lazy">
                     </div>
-                    <button class="boton">
-                        <a href="https://www.tradeinn.com/bikeinn/es/elite-portabidon-custom-race-plus-skin/137515645/p?utm_source=google_products&utm_medium=merchant&id_producte=10500389&country=es&gclsrc=aw.ds&gad_source=1&gad_campaignid=23190453504&gbraid=0AAAAADvzHL8KwXOI0XA-ww_MJ-r9g0cjG&gclid=CjwKCAiAlrXJBhBAEiwA-5pgwtYRlgzsZMn5RbhprwXqXlZD-EVnUOX7lVlKnVi1BOnjZJDI1VZQYBoCNwIQAvD_BwE"
-                            target="_blank">Bikeinn
-                            España</a>
-                    </button>
-                </div>
+                    <a class="boton" href="https://www.tradeinn.com/bikeinn/es/elite-portabidon-custom-race-plus-skin/137515645/p" target="_blank" rel="noopener">
+                        Comprar en Bikeinn
+                    </a>
+                </article>
 
-                <!-- Rodillo -->
-                <div class="accesorio-card">
-                    <h2 class="producte">🏠 Rodillo Tacx Flux S Smart</h2>
+                <article class="accesorio-card">
+                    <h3 class="producte">🏠 Rodillo Tacx Flux S Smart</h3>
                     <p class="descripcio">
                         Rodillo interactivo con resistencia controlada y conexión a apps como Zwift.
                     </p>
-                    <div class="imatge">
-                        <img src="./../public/img/rodillo-tacx-flux-s-smart.webp" alt="Rodillo Tacx Flux S Smart"
-                            class="w-full rounded-lg shadow">
+                    <div class="imatge" data-url="https://www.garmin.com/es-ES/p/690888/">
+                        <img src="../public/img/rodillo-tacx-flux-s-smart.webp" alt="Rodillo Tacx Flux S Smart" loading="lazy">
                     </div>
-                    <button class="boton">
-                        <a href="https://www.garmin.com/es-ES/p/690888/" target="_blank">Garmin España</a>
-                    </button>
-                </div>
+                    <a class="boton" href="https://www.garmin.com/es-ES/p/690888/" target="_blank" rel="noopener">
+                        Comprar en Garmin
+                    </a>
+                </article>
 
-                <!-- Mochila -->
-                <div class="accesorio-card">
-                    <h2 class="producte">🎒 Mochila CamelBak M.U.L.E. 12</h2>
+                <article class="accesorio-card">
+                    <h3 class="producte">🎒 Mochila CamelBak M.U.L.E. 12</h3>
                     <p class="descripcio">
                         Mochila de hidratación con depósito de 3L, ideal para rutas largas en montaña.
                     </p>
-                    <div class="imatge">
-                        <img src="./../public/img/camelbak-mochila-de-hidratacion-m.u.l.e-12-3l.webp"
-                            alt="Mochila CamelBak M.U.L.E. 12" class="w-full rounded-lg shadow">
+                    <div class="imatge" data-url="https://www.tradeinn.com/bikeinn/es/camelbak-mochila-de-hidratacion-m.u.l.e-12-3l/142671342/p">
+                        <img src="../public/img/camelbak-mochila-de-hidratacion-m.u.l.e-12-3l.webp" alt="Mochila CamelBak M.U.L.E. 12" loading="lazy">
                     </div>
-                    <button class="boton">
-                        <a href="https://www.tradeinn.com/bikeinn/es/camelbak-mochila-de-hidratacion-m.u.l.e-12-3l/142671342/p?utm_source=google_products&utm_medium=merchant&id_producte=150040047&country=es&gad_source=1&gad_campaignid=23190453504&gbraid=0AAAAADvzHL8KwXOI0XA-ww_MJ-r9g0cjG&gclid=CjwKCAiAlrXJBhBAEiwA-5pgwsXPs5swrlwuOp74ttrAbidbJyhtGpDjxra1Q9t8s7eWgNcdvSRcJxoCZ24QAvD_BwE&gclsrc=aw.ds"
-                            target="_blank">Bikeinn
-                            España</a>
-                    </button>
-                </div>
+                    <a class="boton" href="https://www.tradeinn.com/bikeinn/es/camelbak-mochila-de-hidratacion-m.u.l.e-12-3l/142671342/p" target="_blank" rel="noopener">
+                        Comprar en Bikeinn
+                    </a>
+                </article>
 
-                <!-- Chaleco reflectante -->
-                <div class="accesorio-card">
-                    <h2 class="producte">🦺 Chaleco reflectante Decathlon Van Rysel</h2>
+                <article class="accesorio-card">
+                    <h3 class="producte">🦺 Chaleco reflectante Decathlon Van Rysel</h3>
                     <p class="descripcio">
                         Chaleco ligero y reflectante para aumentar la visibilidad en carretera.
                     </p>
-                    <div class="imatge">
-                        <img src="./../public/img/chaleco-reflectante.webp" alt="Chaleco reflectante Van Rysel"
-                            class="w-full rounded-lg shadow">
+                    <div class="imatge" data-url="https://www.decathlon.es/es/p/chaleco-ciclismo-hombre-alta-visibilidad-en-17353/_/R-p-344943?mc=8788242">
+                        <img src="../public/img/chaleco-reflectante.webp" alt="Chaleco reflectante Van Rysel" loading="lazy">
                     </div>
-                    <button class="boton">
-                        <a href="https://www.decathlon.es/es/p/chaleco-ciclismo-hombre-alta-visibilidad-en-17353/_/R-p-344943?mc=8788242&LGWCODE=2&gclsrc=aw.ds&&utm_source=google&utm_medium=cpc&utm_campaign=es_t-perf_pmax_n-deca-d_otm-pi-ga-per-pts&utm_id=22471060736_&gad_source=1&gad_campaignid=22471072214&gbraid=0AAAAADkAje86aultv7xm9P8ibHM9yDlX5&gclid=CjwKCAiAlrXJBhBAEiwA-5pgwmo6nJEZAqpdFJTkUPkGOq8U4dBBdSJ8fE_3hkOM_dnHg0_S901wLhoCt1wQAvD_BwE"
-                            target="_blank">Decathlon
-                            España</a>
-                    </button>
-                </div>
+                    <a class="boton" href="https://www.decathlon.es/es/p/chaleco-ciclismo-hombre-alta-visibilidad-en-17353/_/R-p-344943?mc=8788242" target="_blank" rel="noopener">
+                        Comprar en Decathlon
+                    </a>
+                </article>
 
             </div>
         </section>
-    </main>
-</body>
 
+    </main>
+
+    <!-- MODAL -->
+    <div id="imageModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title" class="modal-title"></h2>
+                <button class="modal-close" aria-label="Cerrar modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="">
+            </div>
+            <div class="modal-footer">
+                <a id="modalLink" class="modal-btn" href="#" target="_blank" rel="noopener">
+                    Ver en tienda
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <p>
+            &copy; <span id="year"></span>
+            <span class="visually-hidden">Copyright</span>
+            RecoCyc · Información y recursos sobre ciclismo
+        </p>
+    </footer>
+
+    <script>
+        
+    </script>
+
+</body>
 </html>

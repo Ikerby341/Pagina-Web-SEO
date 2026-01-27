@@ -4,52 +4,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RecoCyc | Recomendaciones</title>
-    <link rel="stylesheet" href="../public/css/main.css" />
-    <link rel="stylesheet" href="../public/css/header.css" />
-    <link rel="stylesheet" href="../public/css/styles.css" />
-    <link rel="stylesheet" href="../public/css/recomendaciones.css" />
-    <script defer src="../public/js/config.js"></script>
+
+    <title>RecoCyc | Recomendaciones de bicicletas</title>
+
+    <meta name="description"
+        content="Selección de bicicletas recomendadas por categoría: montaña, carretera, urbanas, eléctricas, híbridas y BMX. Modelos fiables de marcas líderes del mercado." />
+
+    <meta name="author" content="RecoCyc">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://recocyc.pages.dev/app/recomendaciones.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RecoCyc | Recomendaciones de bicicletas">
+    <meta property="og:description"
+        content="Bicicletas recomendadas por expertos: montaña, carretera, urbanas, eléctricas y más. Comparativas claras y fiables.">
+    <meta property="og:url" content="https://recocyc.pages.dev/app/recomendaciones.html">
+    <meta property="og:site_name" content="RecoCyc">
+    <meta property="og:image" content="https://recocyc.pages.dev/public/img/favicon.webp">
+    <meta property="og:image:alt" content="RecoCyc - Recomendaciones de bicicletas">
+
     <link rel="icon" href="../public/img/favicon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="../public/css/recomendaciones.css">
+
+    <script defer src="../public/js/config.js"></script>
+    <script defer src="../public/js/modal.js"></script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Recomendaciones de bicicletas",
+        "url": "https://recocyc.pages.dev/app/recomendaciones.html",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Inicio",
+                    "item": "https://recocyc.pages.dev/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Recomendaciones"
+                }
+            ]
+        },
+        "mainEntity": {
+            "@type": "ItemList",
+            "name": "Bicicletas recomendadas",
+            "itemListOrder": "https://schema.org/ItemListOrderAscending",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Bicicletas de Montaña" },
+                { "@type": "ListItem", "position": 2, "name": "Bicicletas de Carretera" },
+                { "@type": "ListItem", "position": 3, "name": "Bicicletas Urbanas" },
+                { "@type": "ListItem", "position": 4, "name": "Bicicletas Eléctricas" },
+                { "@type": "ListItem", "position": 5, "name": "Bicicletas Híbridas" },
+                { "@type": "ListItem", "position": 6, "name": "Bicicletas BMX" }
+            ]
+        }
+    }
+    </script>
+
 </head>
 
 <body>
-    <header>
+
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido</a>
+
+    <header role="banner">
         <div class="container">
             <div class="logotip">
-                <h1><a href="../index.html">RecoCyc</a></h1>
+                <a href="../index.html" class="logo">RecoCyc</a>
             </div>
-            <nav>
+
+            <nav id="menu-principal" aria-label="Navegación principal">
                 <ul>
                     <li><a href="tipos.html">Tipos</a></li>
                     <li><a href="accesorios.html">Accesorios</a></li>
                     <li><a href="marcas.html">Marcas</a></li>
-                    <li><a href="recomendaciones.html" class="active">Recomendaciones</a></li>
+                    <li><a href="recomendaciones.html" class="active" aria-current="page">Recomendaciones</a></li>
                     <li><a href="opiniones.html">Opiniones</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
 
-            <div class="menu-toggle" id="menu-toggle">
-<img src="../public/img/desplegable.webp" alt="Icono desplegable">
-            </div>
-
-            <div class="mobile-menu" id="mobile-menu">
-                <ul>
-                    <li><a href="tipos.html">Tipos</a></li>
-                    <li><a href="accesorios.html">Accesorios</a></li>
-                    <li><a href="marcas.html">Marcas</a></li>
-                    <li><a href="recomendaciones.html">Recomendaciones</a></li>
-                    <li><a href="opiniones.html">Opiniones</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false"
+                aria-controls="menu-principal">
+                <img src="../public/img/desplegable.webp" alt="Icono Desplegable" aria-hidden="true" />
+            </button>
         </div>
     </header>
 
-    <main>
+    <main id="contenido-principal" role="main">
+        <!-- Breadcrumbs -->
+        <nav aria-label="Ruta de navegación" class="contenido">
+            <p class="breadcrumbs">
+                <a href="../index.html">Inicio</a> › <span>Recomendaciones</span>
+            </p>
+        </nav>
+
         <!-- Hero -->
-        <section class="contenido">
+        <section class="contenido hero">
             <h1 class="titol-principal">Nuestras recomendaciones de bicicletas</h1>
             <p class="text">
                 Descubre nuestra selección de bicicletas de todas las categorías, desde bicicletas de montaña hasta modelos urbanos y eléctricos. Todas ellas cuidadosamente elegidas de las mejores marcas del mercado.
@@ -58,7 +118,7 @@
 
         <!-- BICICLETAS DE MONTAÑA -->
         <section class="contenido">
-            <h1 class="titol">🏔️ Bicicletas de Montaña</h1>
+            <h2 class="titol">🏔️ Bicicletas de Montaña</h2>
             <div>
 
                 <!-- Scott Spark 970 -->
@@ -67,46 +127,46 @@
                     <p>
                         Bicicleta de montaña XC de doble suspensión (full suspension) con cuadro ligero de carbono, pensada para cross-country exigente. Equilibrio entre peso y control, adecuada para competición y senderos técnicos.
                     </p>
-                    <a href="https://www.scottconceptstore.es/bicicleta-scott-970-silver-tw-2024" target="_blank">Ver en Scott Sports</a>
-                    <div>
-                        <img src="./../public/img/bicicleta-scott-spark-970.webp" alt="Scott Spark 970">
+                    <div class="imagen-container" data-url="https://www.scottconceptstore.es/bicicleta-scott-970-silver-tw-2024">
+                        <img src="../public/img/bicicleta-scott-spark-970.webp" alt="Scott Spark 970" loading="lazy">
                     </div>
+                    <a href="https://www.scottconceptstore.es/bicicleta-scott-970-silver-tw-2024" target="_blank" rel="noopener">Ver en Scott Sports</a>
                 </div>
 
                 <!-- Trek Marlin 8 -->
                 <div>
-                    <h3 >Trek Marlin 8</h3>
-                    <p >
+                    <h3>Trek Marlin 8</h3>
+                    <p>
                         Mountain bike versátil con cuadro de aluminio y suspensión frontal de 100mm, pensada para rutas y senderos moderados. Perfecta para principiantes y ciclistas recreativos; incluye frenos de disco hidráulicos y componentes orientados a la durabilidad.
                     </p>
-                    <a href="https://www.trekbikes.com/es/es_ES/bicicletas/bicicletas-de-monta%C3%B1a/bicicletas-el%C3%A9ctricas-de-monta%C3%B1a/marlin/f/F358/marlin+-8/56627/5336224" target="_blank" >Ver en Trek</a>
-                    <div >
-                        <img src="./../public/img/trek-marlin-8.webp" alt="Trek Marlin 8" >
+                    <div class="imagen-container" data-url="https://www.trekbikes.com/es/es_ES/bicicletas/bicicletas-de-monta%C3%B1a/bicicletas-el%C3%A9ctricas-de-monta%C3%B1a/marlin/f/F358/marlin+-8/56627/5336224">
+                        <img src="../public/img/trek-marlin-8.webp" alt="Trek Marlin 8" loading="lazy">
                     </div>
+                    <a href="https://www.trekbikes.com/es/es_ES/bicicletas/bicicletas-de-monta%C3%B1a/bicicletas-el%C3%A9ctricas-de-monta%C3%B1a/marlin/f/F358/marlin+-8/56627/5336224" target="_blank" rel="noopener">Ver en Trek</a>
                 </div>
 
                 <!-- Specialized Stumpjumper Expert -->
                 <div>
-                    <h3 >Specialized Stumpjumper Expert</h3>
-                    <p >
+                    <h3>Specialized Stumpjumper Expert</h3>
+                    <p>
                         Mountain bike de doble suspensión orientada al trail. Cuadro de carbono, sistemas de amortiguación ajustables y geometría pensada para maniobrabilidad en bajadas técnicas y eficiencia en subidas.
                     </p>
-                    <a href="https://www.specialized.com/es/es/stumpjumper-expert/p/199757?color=320323-199757" target="_blank" >Ver en Specialized</a>
-                    <div >
-                        <img src="./../public/img/specialized-stumpjumper-expert.webp" alt="Specialized Stumpjumper Expert" >
+                    <div class="imagen-container" data-url="https://www.specialized.com/es/es/stumpjumper-expert/p/199757?color=320323-199757">
+                        <img src="../public/img/specialized-stumpjumper-expert.webp" alt="Specialized Stumpjumper Expert" loading="lazy">
                     </div>
+                    <a href="https://www.specialized.com/es/es/stumpjumper-expert/p/199757?color=320323-199757" target="_blank" rel="noopener">Ver en Specialized</a>
                 </div>
 
                 <!-- Orbea Occam H10 -->
                 <div>
-                    <h3 >Orbea Occam H10</h3>
-                    <p >
+                    <h3>Orbea Occam H10</h3>
+                    <p>
                         Mountain bike de doble suspensión con geometría trail; disponible en especificaciones que incluyen cuadro de aluminio o carbono según versión. Componentes Shimano de calidad y recorrido pensado para senderos exigentes.
                     </p>
-                    <a href="https://www.orbea.com/int-es/bicicletas/montana/occam/cat/occam-sl-h10" target="_blank" >Ver en Orbea</a>
-                    <div >
-                        <img src="./../public/img/orbea-occam-h10.webp" alt="Orbea Occam H10" >
+                    <div class="imagen-container" data-url="https://www.orbea.com/int-es/bicicletas/montana/occam/cat/occam-sl-h10">
+                        <img src="../public/img/orbea-occam-h10.webp" alt="Orbea Occam H10" loading="lazy">
                     </div>
+                    <a href="https://www.orbea.com/int-es/bicicletas/montana/occam/cat/occam-sl-h10" target="_blank" rel="noopener">Ver en Orbea</a>
                 </div>
 
             </div>
@@ -114,55 +174,55 @@
 
         <!-- BICICLETAS DE CARRETERA -->
         <section class="contenido">
-            <h1 class="titol">🚴 Bicicletas de Carretera</h1>
-            <div >
+            <h2 class="titol">🚴 Bicicletas de Carretera</h2>
+            <div>
 
                 <!-- Giant TCR Advanced Pro -->
                 <div>
-                    <h3 >Giant TCR Advanced Pro</h3>
-                    <p >
+                    <h3>Giant TCR Advanced Pro</h3>
+                    <p>
                         Bicicleta de carretera ultraligera con cuadro de carbono y enfoque en rendimiento. Las versiones Advanced Pro montan transmisiones de alta gama (dependiendo de la especificación puede incluir grupos Shimano Ultegra o Dura-Ace). Diseñada para velocidad en ruta y competiciones.
                     </p>
-                    <a href="https://www.giant-bicycles.com/es/tcr-advanced-pro-0-di2" target="_blank" >Ver en Giant</a>
-                    <div >
-                        <img src="./../public/img/giant-tcr-advanced-pro.webp" alt="Giant TCR Advanced Pro" >
+                    <div class="imagen-container" data-url="https://www.giant-bicycles.com/es/tcr-advanced-pro-0-di2">
+                        <img src="../public/img/giant-tcr-advanced-pro.webp" alt="Giant TCR Advanced Pro" loading="lazy">
                     </div>
+                    <a href="https://www.giant-bicycles.com/es/tcr-advanced-pro-0-di2" target="_blank" rel="noopener">Ver en Giant</a>
                 </div>
 
                 <!-- Specialized Tarmac SL7 -->
                 <div>
-                    <h3 >Specialized Tarmac SL7 Sport</h3>
-                    <p >
+                    <h3>Specialized Tarmac SL7 Sport</h3>
+                    <p>
                         Versión Sport del Tarmac SL7 con cuadro de carbono y grupo Shimano 105 en la especificación enlazada. Ofrece un buen equilibrio entre aerodinámica y ligereza, orientada a ciclistas que buscan rendimiento con una relación calidad-precio ajustada.
                     </p>
-                    <a href="https://www.specialized.com/es/es/tarmac-sl7-sport-shimano-105/p/4221579?color=5466386-4221579" target="_blank" >Ver en Specialized</a>
-                    <div >
-                        <img src="./../public/img/specialized-tarmac-sl7.webp" alt="Specialized Tarmac SL7" >
+                    <div class="imagen-container" data-url="https://www.specialized.com/es/es/tarmac-sl7-sport-shimano-105/p/4221579?color=5466386-4221579">
+                        <img src="../public/img/specialized-tarmac-sl7.webp" alt="Specialized Tarmac SL7" loading="lazy">
                     </div>
+                    <a href="https://www.specialized.com/es/es/tarmac-sl7-sport-shimano-105/p/4221579?color=5466386-4221579" target="_blank" rel="noopener">Ver en Specialized</a>
                 </div>
 
                 <!-- Trek Domane+ SLR6 -->
                 <div>
-                    <h3 >Trek Domane+ SLR 6</h3>
-                    <p >
+                    <h3>Trek Domane+ SLR 6</h3>
+                    <p>
                         Versión eléctrica de la línea Domane (Domane+), con cuadro de carbono orientado al confort en largas distancias y asistencia al pedaleo integrada. Es una e-road diseñada para rutas largas y comodidad; la transmisión y componentes exactos dependen de la especificación seleccionada.
                     </p>
-                    <a href="https://www.trekbikes.com/es/es_ES/bicicletas/bicicletas-el%C3%A9ctricas/bicicletas-el%C3%A9ctricas-de-carretera/domane-slr/domane-slr-6-pro/p/36703/?colorCode=black_grey" target="_blank" >Ver en Trek</a>
-                    <div >
-                        <img src="./../public/img/domane-slr-6.webp" alt="Trek Domane+ SLR6" >
+                    <div class="imagen-container" data-url="https://www.trekbikes.com/es/es_ES/bicicletas/bicicletas-el%C3%A9ctricas/bicicletas-el%C3%A9ctricas-de-carretera/domane-slr/domane-slr-6-pro/p/36703/?colorCode=black_grey">
+                        <img src="../public/img/domane-slr-6.webp" alt="Trek Domane+ SLR6" loading="lazy">
                     </div>
+                    <a href="https://www.trekbikes.com/es/es_ES/bicicletas/bicicletas-el%C3%A9ctricas/bicicletas-el%C3%A9ctricas-de-carretera/domane-slr/domane-slr-6-pro/p/36703/?colorCode=black_grey" target="_blank" rel="noopener">Ver en Trek</a>
                 </div>
 
                 <!-- Cannondale SuperSix Evo -->
                 <div>
-                    <h3 >Cannondale SuperSix Evo</h3>
-                    <p >
+                    <h3>Cannondale SuperSix Evo</h3>
+                    <p>
                         Bicicleta de carretera con tecnología Smartbar y geometría optimizada para comodidad y velocidad. Cuadro de carbono con amortiguación integrada.
                     </p>
-                    <a href="https://www.cannondale.com/es-es/bikes/road/race/supersix-evo/supersix-evo-1" target="_blank" >Ver en Cannondale</a>
-                    <div >
-                        <img src="./../public/img/cannondale-supersix-evo.webp" alt="Cannondale SuperSix Evo" >
+                    <div class="imagen-container" data-url="https://www.cannondale.com/es-es/bikes/road/race/supersix-evo/supersix-evo-1">
+                        <img src="../public/img/cannondale-supersix-evo.webp" alt="Cannondale SuperSix Evo" loading="lazy">
                     </div>
+                    <a href="https://www.cannondale.com/es-es/bikes/road/race/supersix-evo/supersix-evo-1" target="_blank" rel="noopener">Ver en Cannondale</a>
                 </div>
 
             </div>
@@ -170,43 +230,43 @@
 
         <!-- BICICLETAS URBANAS -->
         <section class="contenido">
-            <h1 class="titol">🏙️ Bicicletas Urbanas</h1>
-            <div >
+            <h2 class="titol">🏙️ Bicicletas Urbanas</h2>
+            <div>
 
                 <!-- Giant Escape 3 -->
                 <div>
-                    <h3 >Giant Escape 3</h3>
-                    <p >
+                    <h3>Giant Escape 3</h3>
+                    <p>
                         Bicicleta urbana y de fitness con cuadro ALUXX de aluminio, geometría cómoda y compatibilidad para portaequipajes y guardabarros. Versátil para desplazamientos diarios y salidas de fin de semana.
                     </p>
-                    <a href="https://www.giant-bicycles.com/es/escape-3" target="_blank" >Ver en Giant (España)</a>
-                    <div >
-                        <img src="./../public/img/giant-escape-3.webp" alt="Giant Escape 3" >
+                    <div class="imagen-container" data-url="https://www.giant-bicycles.com/es/escape-3">
+                        <img src="../public/img/giant-escape-3.webp" alt="Giant Escape 3" loading="lazy">
                     </div>
+                    <a href="https://www.giant-bicycles.com/es/escape-3" target="_blank" rel="noopener">Ver en Giant</a>
                 </div>
 
                 <!-- Specialized Sirrus X 3.0 -->
                 <div>
-                    <h3 >Specialized Sirrus X 3.0</h3>
-                    <p >
+                    <h3>Specialized Sirrus X 3.0</h3>
+                    <p>
                         Bicicleta urbana/híbrida de alto rendimiento con neumáticos de mayor volumen, transmisión 1x y frenos hidráulicos. Ideal para ciudad y rutas mixtas, destaca por su versatilidad y comodidad.
                     </p>
-                    <a href="https://www.specialized.com/es/es/sirrus-x-30/p/4222055?color=5383335-4222055" target="_blank" >Ver en Specialized (España)</a>
-                    <div >
-                        <img src="./../public/img/sirrus-x-3.0.webp" alt="Specialized Sirrus X 3.0" >
+                    <div class="imagen-container" data-url="https://www.specialized.com/es/es/sirrus-x-30/p/4222055?color=5383335-4222055">
+                        <img src="../public/img/sirrus-x-3.0.webp" alt="Specialized Sirrus X 3.0" loading="lazy">
                     </div>
+                    <a href="https://www.specialized.com/es/es/sirrus-x-30/p/4222055?color=5383335-4222055" target="_blank" rel="noopener">Ver en Specialized</a>
                 </div>
 
-                <!-- Trek FX (info general) -->
+                <!-- Trek FX -->
                 <div>
-                    <h3 >Trek FX (serie)</h3>
-                    <p >
+                    <h3>Trek FX (serie)</h3>
+                    <p>
                         Línea híbrida de Trek pensada para fitness y commuting; modelos como el FX 3 ofrecen geometría relajada, ruedas de 700c y opciones con frenos de disco para mayor control urbano.
                     </p>
-                    <a href="https://www.trekbikes.com/es/es_ES/bicicletas/bicicletas-h%C3%ADbridas/bicicletas-de-fitness/fx/f/F421/fx-2-midstep-gen-4/40816/5293034" target="_blank" >Ver gama FX en Trek (España)</a>
-                    <div >
-                        <img src="./../public/img/trek-fx.webp" alt="Trek FX series" >
+                    <div class="imagen-container" data-url="https://www.trekbikes.com/es/es_ES/bicicletas/bicicletas-h%C3%ADbridas/bicicletas-de-fitness/fx/f/F421/fx-2-midstep-gen-4/40816/5293034">
+                        <img src="../public/img/trek-fx.webp" alt="Trek FX series" loading="lazy">
                     </div>
+                    <a href="https://www.trekbikes.com/es/es_ES/bicicletas/bicicletas-h%C3%ADbridas/bicicletas-de-fitness/fx/f/F421/fx-2-midstep-gen-4/40816/5293034" target="_blank" rel="noopener">Ver gama FX en Trek</a>
                 </div>
 
             </div>
@@ -214,125 +274,150 @@
 
         <!-- BICICLETAS ELÉCTRICAS -->
         <section class="contenido">
-            <h1 class="titol">⚡ Bicicletas Eléctricas</h1>
-            <div >
+            <h2 class="titol">⚡ Bicicletas Eléctricas</h2>
+            <div>
 
-                    <!-- Specialized Turbo Como 4.0 -->
-                    <div>
-                        <h3 >Specialized Turbo Como 4.0</h3>
-                        <p >
-                            E-bike cómoda y práctica con motor Turbo Full Power, batería integrada de alta capacidad (710Wh en algunas versiones) y componentes orientados al uso urbano: guardabarros, luces y portabultos.
-                        </p>
-                        <a href="https://www.specialized.com/es/es/turbo-como-40/p/4248976?color=5430934-4248976" target="_blank" >Ver Turbo Como 4.0 en Specialized (España)</a>
-                        <div >
-                            <img src="./../public/img/specialized-turbo-como-4.0.webp" alt="Specialized Turbo Como 4.0" >
-                        </div>
+                <!-- Specialized Turbo Como 4.0 -->
+                <div>
+                    <h3>Specialized Turbo Como 4.0</h3>
+                    <p>
+                        E-bike cómoda y práctica con motor Turbo Full Power, batería integrada de alta capacidad (710Wh en algunas versiones) y componentes orientados al uso urbano: guardabarros, luces y portabultos.
+                    </p>
+                    <div class="imagen-container" data-url="https://www.specialized.com/es/es/turbo-como-40/p/4248976?color=5430934-4248976">
+                        <img src="../public/img/specialized-turbo-como-4.0.webp" alt="Specialized Turbo Como 4.0" loading="lazy">
                     </div>
-
-                    <!-- Specialized Turbo Vado 4.0 -->
-                    <div>
-                        <h3 >Specialized Turbo Vado 4.0</h3>
-                        <p >
-                            E-bike pensada para desplazamientos rápidos por ciudad y rutas de media distancia; combina motor potente, batería de buena autonomía y geometría cómoda para el día a día.
-                        </p>
-                        <a href="https://www.specialized.com/es/es/turbo-vado-40/p/4275090?color=5465456-4275090" target="_blank" >Ver Turbo Vado 4.0 en Specialized (España)</a>
-                        <div >
-                            <img src="./../public/img/specialized-turbo-vado-4.0.webp" alt="Specialized Turbo Vado 4.0" >
-                        </div>
-                    </div>
-
-                    <!-- Giant e-bikes (catálogo) -->
-                    <div>
-                        <h3 >Giant E-Bikes (colección)</h3>
-                        <p >
-                            Giant ofrece una gama de e-bikes tanto urbanas como de fitness y montaña. Recomendable revisar modelos y disponibilidad en su web oficial en España.
-                        </p>
-                        <a href="https://www.giant-bicycles.com/es/bicis/bicis-electricas" target="_blank" >Ver e-bikes en Giant (España)</a>
-                        <div >
-                            <img src="./../public/img/explore-e-1-double-diamond.webp" alt="Explore E 1 Double Diamond" >
-                        </div>
-                    </div>
-
-                    <!-- Cannondale (información general) -->
-                    <div>
-                        <h3 >Cannondale (e-bikes y urbanas)</h3>
-                        <p >
-                            Cannondale dispone de modelos urbanos y e-bikes con buen compromiso entre peso y rendimiento. Consulta su tienda en España o distribuidores locales para modelos concretos y disponibilidad.
-                        </p>
-                        <a href="https://www.cannondale.com/es-es/bikes/electric" target="_blank" >Ver en Cannondale (España)</a>
-                        <div >
-                            <img src="./../public/img/cannonandale-flyingV-1.webp" alt="Cannondale FlyingV 1" >
-                        </div>
-                    </div>
-
+                    <a href="https://www.specialized.com/es/es/turbo-como-40/p/4248976?color=5430934-4248976" target="_blank" rel="noopener">Ver Turbo Como 4.0 en Specialized</a>
                 </div>
-            </section>
+
+                <!-- Specialized Turbo Vado 4.0 -->
+                <div>
+                    <h3>Specialized Turbo Vado 4.0</h3>
+                    <p>
+                        E-bike pensada para desplazamientos rápidos por ciudad y rutas de media distancia; combina motor potente, batería de buena autonomía y geometría cómoda para el día a día.
+                    </p>
+                    <div class="imagen-container" data-url="https://www.specialized.com/es/es/turbo-vado-40/p/4275090?color=5465456-4275090">
+                        <img src="../public/img/specialized-turbo-vado-4.0.webp" alt="Specialized Turbo Vado 4.0" loading="lazy">
+                    </div>
+                    <a href="https://www.specialized.com/es/es/turbo-vado-40/p/4275090?color=5465456-4275090" target="_blank" rel="noopener">Ver Turbo Vado 4.0 en Specialized</a>
+                </div>
+
+                <!-- Giant e-bikes -->
+                <div>
+                    <h3>Giant E-Bikes (colección)</h3>
+                    <p>
+                        Giant ofrece una gama de e-bikes tanto urbanas como de fitness y montaña. Recomendable revisar modelos y disponibilidad en su web oficial en España.
+                    </p>
+                    <div class="imagen-container" data-url="https://www.giant-bicycles.com/es/bicis/bicis-electricas">
+                        <img src="../public/img/explore-e-1-double-diamond.webp" alt="Explore E 1 Double Diamond" loading="lazy">
+                    </div>
+                    <a href="https://www.giant-bicycles.com/es/bicis/bicis-electricas" target="_blank" rel="noopener">Ver e-bikes en Giant</a>
+                </div>
+
+                <!-- Cannondale -->
+                <div>
+                    <h3>Cannondale (e-bikes y urbanas)</h3>
+                    <p>
+                        Cannondale dispone de modelos urbanos y e-bikes con buen compromiso entre peso y rendimiento. Consulta su tienda en España o distribuidores locales para modelos concretos y disponibilidad.
+                    </p>
+                    <div class="imagen-container" data-url="https://www.cannondale.com/es-es/bikes/electric">
+                        <img src="../public/img/cannonandale-flyingV-1.webp" alt="Cannondale FlyingV 1" loading="lazy">
+                    </div>
+                    <a href="https://www.cannondale.com/es-es/bikes/electric" target="_blank" rel="noopener">Ver en Cannondale</a>
+                </div>
+
+            </div>
+        </section>
 
         <!-- BICICLETAS HÍBRIDAS -->
         <section class="contenido">
-            <h1 class="titol">🔄 Bicicletas Híbridas</h1>
-            <div >
+            <h2 class="titol">🔄 Bicicletas Híbridas</h2>
+            <div>
 
-                    <!-- Specialized Sirrus X 3.0 (oficial ES) -->
-                    <div>
-                        <h3 >Specialized Sirrus X 3.0</h3>
-                        <p >
-                            Bicicleta híbrida/fitness muy versátil, con transmisión 1x, frenos hidráulicos y neumáticos de mayor volumen para confort en ciudad y pistas ligeras. Excelente compromiso entre confort y rendimiento.
-                        </p>
-                        <a href="https://www.specialized.com/es/es/sirrus-x-30/p/200343?color=322545-200343" target="_blank" >Ficha en Specialized España</a>
-                        <div >
-                            <img src="./../public/img/sirrus-x-3.0.webp" alt="Specialized Sirrus X 3.0" >
-                        </div>
+                <!-- Specialized Sirrus X 3.0 -->
+                <div>
+                    <h3>Specialized Sirrus X 3.0</h3>
+                    <p>
+                        Bicicleta híbrida/fitness muy versátil, con transmisión 1x, frenos hidráulicos y neumáticos de mayor volumen para confort en ciudad y pistas ligeras. Excelente compromiso entre confort y rendimiento.
+                    </p>
+                    <div class="imagen-container" data-url="https://www.specialized.com/es/es/sirrus-x-30/p/200343?color=322545-200343">
+                        <img src="../public/img/sirrus-x-3.0.webp" alt="Specialized Sirrus X 3.0" loading="lazy">
                     </div>
-
-                    <!-- Riverside 920 (Decathlon - fallback español) -->
-                    <div>
-                        <h3 >Riverside 920</h3>
-                        <p >
-                            Bicicleta híbrida ligera pensada para rutas largas y commuting; cuadro de aleación, transmisión fiable y geometría cómoda. Buena opción como alternativa con disponibilidad en tiendas españolas.
-                        </p>
-                        <a href="https://www.decathlon.es/es/p/bicicleta-de-trekking-riverside-920-gris/_/R-p-329787" target="_blank" >Ver en Decathlon España</a>
-                        <div >
-                            <img src="./../public/img/riverside-920.webp" alt="Riverside 920" >
-                        </div>
-                    </div>
-
+                    <a href="https://www.specialized.com/es/es/sirrus-x-30/p/200343?color=322545-200343" target="_blank" rel="noopener">Ficha en Specialized España</a>
                 </div>
-            </section>
+
+                <!-- Riverside 920 -->
+                <div>
+                    <h3>Riverside 920</h3>
+                    <p>
+                        Bicicleta híbrida ligera pensada para rutas largas y commuting; cuadro de aleación, transmisión fiable y geometría cómoda. Buena opción como alternativa con disponibilidad en tiendas españolas.
+                    </p>
+                    <div class="imagen-container" data-url="https://www.decathlon.es/es/p/bicicleta-de-trekking-riverside-920-gris/_/R-p-329787">
+                        <img src="../public/img/riverside-920.webp" alt="Riverside 920" loading="lazy">
+                    </div>
+                    <a href="https://www.decathlon.es/es/p/bicicleta-de-trekking-riverside-920-gris/_/R-p-329787" target="_blank" rel="noopener">Ver en Decathlon España</a>
+                </div>
+
+            </div>
+        </section>
 
         <!-- BICICLETAS BMX -->
         <section class="contenido">
-            <h1 class="titol">🎪 Bicicletas BMX</h1>
-            <div >
+            <h2 class="titol">🎪 Bicicletas BMX</h2>
+            <div>
 
-                    <!-- Mongoose Legion L500 (Tradeinn / Bikeinn - tienda ES) -->
-                    <div>
-                        <h3 >Mongoose Legion L500</h3>
-                        <p >
-                            BMX de 20" con componentes orientados al freestyle y saltos; disponible en distribuidores españoles online (Tradeinn/Bikeinn), buen equilibrio entre precio y prestaciones.
-                        </p>
-                        <a href="https://www.mongoose.com/products/legion-l500?variant=44547132031132&srsltid=AfmBOoqx3H71uUDFCaFG5IY5jRdbW3q3II8CYKV5FW4sXwEcM0VjAWpz" target="_blank" >Ver en Mongoose</a>
-                        <div >
-                            <img src="./../public/img/legion-l500.webp" alt="Mongoose Legion L500" >
-                        </div>
+                <!-- Mongoose Legion L500 -->
+                <div>
+                    <h3>Mongoose Legion L500</h3>
+                    <p>
+                        BMX de 20" con componentes orientados al freestyle y saltos; disponible en distribuidores españoles online (Tradeinn/Bikeinn), buen equilibrio entre precio y prestaciones.
+                    </p>
+                    <div class="imagen-container" data-url="https://www.mongoose.com/products/legion-l500?variant=44547132031132">
+                        <img src="../public/img/legion-l500.webp" alt="Mongoose Legion L500" loading="lazy">
                     </div>
-
-                    <!-- Haro / Más opciones BMX (Tradeinn - catálogo ES) -->
-                    <div>
-                        <h3 >Haro / Catálogo BMX (Bikeinn)</h3>
-                        <p >
-                            Si buscas más opciones de BMX (tallas 16"/20"/24") revisa el catálogo de tiendas españolas como Bikeinn/Tradeinn donde encontrarás Haro, Mongoose y otras marcas disponibles en España.
-                        </p>
-                        <a href="https://www.tradeinn.com/bikeinn/es/bicicletas-y-cuadros-bmx/16199/s" target="_blank" >Explorar BMX en Bikeinn (Tradeinn)</a>
-                        <div >
-                            <img src="./../public/img/specialized-bicicleta-bmx-p.4.webp" alt="Catálogo BMX Bikeinn" >
-                        </div>
-                    </div>
-
+                    <a href="https://www.mongoose.com/products/legion-l500?variant=44547132031132" target="_blank" rel="noopener">Ver en Mongoose</a>
                 </div>
-            </section>
+
+                <!-- Haro / Más opciones BMX -->
+                <div>
+                    <h3>Haro / Catálogo BMX (Bikeinn)</h3>
+                    <p>
+                        Si buscas más opciones de BMX (tallas 16"/20"/24") revisa el catálogo de tiendas españolas como Bikeinn/Tradeinn donde encontrarás Haro, Mongoose y otras marcas disponibles en España.
+                    </p>
+                    <div class="imagen-container" data-url="https://www.tradeinn.com/bikeinn/es/bicicletas-y-cuadros-bmx/16199/s">
+                        <img src="../public/img/specialized-bicicleta-bmx-p.4.webp" alt="Catálogo BMX Bikeinn" loading="lazy">
+                    </div>
+                    <a href="https://www.tradeinn.com/bikeinn/es/bicicletas-y-cuadros-bmx/16199/s" target="_blank" rel="noopener">Explorar BMX en Bikeinn</a>
+                </div>
+
+            </div>
+        </section>
 
     </main>
+
+    <!-- MODAL -->
+    <div id="imageModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title" class="modal-title"></h2>
+                <button class="modal-close" aria-label="Cerrar modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="">
+            </div>
+            <div class="modal-footer">
+                <a id="modalLink" class="modal-btn" href="#" target="_blank" rel="noopener">
+                    Ver en tienda
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" role="contentinfo">
+        <p>
+            &copy; <span id="year"></span> RecoCyc · Información y recursos sobre ciclismo
+        </p>
+    </footer>
+
 </body>
 
 </html>

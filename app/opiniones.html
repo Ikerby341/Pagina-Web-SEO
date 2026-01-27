@@ -1,74 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RecoCyc | Opiniones</title>
-    <link rel="stylesheet" href="./../public/css/opiniones.css">
+
+    <title>RecoCyc | Opiniones y valoraciones de ciclistas</title>
+
+    <meta name="description"
+        content="Lee opiniones reales de ciclistas sobre bicicletas, marcas y recomendaciones de RecoCyc. Comparte tu experiencia y ayuda a otros usuarios." />
+
+    <meta name="author" content="Equipo RecoCyc">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://recocyc.pages.dev/app/opiniones.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RecoCyc | Opiniones de ciclistas">
+    <meta property="og:description"
+        content="Opiniones reales sobre bicicletas y recomendaciones. Comparte tu experiencia como ciclista.">
+    <meta property="og:url" content="https://recocyc.pages.dev/app/opiniones.html">
+    <meta property="og:site_name" content="RecoCyc">
+    <meta property="og:image" content="https://recocyc.pages.dev/public/img/favicon.webp">
+    <meta property="og:image:alt" content="RecoCyc - Opiniones de ciclistas">
+
+    <link rel="stylesheet" href="../public/css/opiniones.css">
     <link rel="icon" href="../public/img/favicon.webp" type="image/x-icon">
+
     <script defer src="../public/js/config.js"></script>
-    <script defer src="./../public/js/main.js"></script>
+    <script defer src="../public/js/main.js"></script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Opiniones de ciclistas",
+        "url": "https://recocyc.pages.dev/app/opiniones.html",
+        "description": "Opiniones reales de usuarios sobre bicicletas y recomendaciones de RecoCyc.",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Inicio",
+                    "item": "https://recocyc.pages.dev/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Opiniones",
+                    "item": "https://recocyc.pages.dev/app/opiniones.html"
+                }
+            ]
+        }
+    }
+    </script>
 </head>
 
 <body>
-    <header>
+
+    <!-- Accesibilidad -->
+    <a href="#contenido-principal" class="skip-link">
+        Saltar al contenido
+    </a>
+
+    <header role="banner">
         <div class="container">
             <div class="logotip">
-                <h1><a href="../index.html">RecoCyc</a></h1>
+                <a href="../index.html" class="logo">RecoCyc</a>
             </div>
 
-            <nav>
+            <nav id="menu-principal" aria-label="Navegación principal">
                 <ul>
                     <li><a href="tipos.html">Tipos</a></li>
                     <li><a href="accesorios.html">Accesorios</a></li>
                     <li><a href="marcas.html">Marcas</a></li>
                     <li><a href="recomendaciones.html">Recomendaciones</a></li>
-                    <li><a href="opiniones.html" class="active">Opiniones</a></li>
+                    <li><a href="opiniones.html" class="active" aria-current="page">Opiniones</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
 
-            <div class="menu-toggle" id="menu-toggle">
-                <img src="./../public/img/desplegable.webp" alt="Icono desplegable">
-            </div>
-
-            <div class="mobile-menu" id="mobile-menu">
-                <ul>
-                    <li><a href="tipos.html">Tipos</a></li>
-                    <li><a href="accesorios.html">Accesorios</a></li>
-                    <li><a href="marcas.html">Marcas</a></li>
-                    <li><a href="recomendaciones.html">Recomendaciones</a></li>
-                    <li><a href="opiniones.html">Opiniones</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false"
+                aria-controls="menu-principal">
+                <img src="../public/img/desplegable.webp" alt="Icono Desplegable" aria-hidden="true" />
+            </button>
         </div>
     </header>
-    <main>
+
+    <main id="contenido-principal" role="main">
+        <!-- Breadcrumbs -->
+        <nav aria-label="Ruta de navegación" class="contenido">
+            <p class="breadcrumbs">
+                <a href="../index.html">Inicio</a> › <span>Opiniones</span>
+            </p>
+        </nav>
+
+        <!-- Introducción -->
         <section class="contenido">
-            <h1 class="titol">Opiniones de Usuarios</h1>
+            <h1 class="titol-principal">
+                Opiniones de ciclistas
+            </h1>
             <p class="text">
-                Descubre lo que otros ciclistas piensan sobre nuestras bicicletas y servicios. Tu opinión es importante
-                para nosotros.
+                Lee experiencias reales de otros usuarios sobre bicicletas, marcas y recomendaciones.
+                Tu opinión ayuda a mejorar la comunidad ciclista.
             </p>
         </section>
 
+        <!-- Formulario -->
         <section class="contenido">
-            <h1 class="titolForm">Envía tu opinión:</h1>
-            <form id="opinionForm">
-                <label for="username">Nombre de usuario:</label>
-                <input type="text" id="username" name="username" required>
+            <h2 class="titol">
+                Comparte tu opinión
+            </h2>
 
-                <label for="comment">Comentario:</label>
-                <textarea id="comment" name="comment" rows="4" required></textarea>
+            <form id="opinionForm" aria-label="Formulario de opiniones">
+                <div>
+                    <label for="username">Nombre de usuario</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
 
-                <button type="submit">Enviar Opinión</button>
+                <div>
+                    <label for="comment">Comentario</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">
+                    Enviar opinión
+                </button>
             </form>
         </section>
 
-        <section class="contenido content">
-            <h2>Comentarios Recientes</h2>
-            <div id="Comentarios">
-            </div>
+        <!-- Opiniones -->
+        <section class="contenido" aria-labelledby="comentarios-recientes">
+            <h2 id="comentarios-recientes" class="titol">
+                Comentarios recientes
+            </h2>
+
+            <div id="Comentarios" itemscope itemtype="https://schema.org/Review"></div>
+        </section>
+
     </main>
+
+    <footer class="footer" role="contentinfo">
+        <p>
+            &copy; <span id="year"></span>
+            RecoCyc · Información y recursos sobre ciclismo
+        </p>
+    </footer>
+
+</body>
+
+</html>

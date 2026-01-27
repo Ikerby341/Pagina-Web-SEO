@@ -1,80 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RecoCyc | Contacto</title>
-    <link rel="stylesheet" href="../public/css/main.css" />
-    <link rel="stylesheet" href="../public/css/header.css" />
-    <link rel="stylesheet" href="../public/css/contacto.css" />    
-    <script defer src="../public/js/config.js"></script>
+
+    <title>Contacto | RecoCyc – Atención y consultas sobre bicicletas</title>
+
+    <meta name="description"
+        content="Contacta con RecoCyc para resolver dudas, enviar sugerencias o recibir asesoramiento sobre bicicletas, accesorios y recomendaciones.">
+
+    <meta name="author" content="Equipo RecoCyc">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://recocyc.pages.dev/app/contacto.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contacto | RecoCyc">
+    <meta property="og:description"
+        content="Contacta con RecoCyc para dudas, sugerencias o asesoramiento ciclista.">
+    <meta property="og:url" content="https://recocyc.pages.dev/app/contacto.html">
+    <meta property="og:site_name" content="RecoCyc">
+    <meta property="og:image" content="https://recocyc.pages.dev/public/img/favicon.webp">
+    <meta property="og:image:alt" content="RecoCyc - Contacto">
+
+    <link rel="stylesheet" href="../public/css/contacto.css">
     <link rel="icon" href="../public/img/favicon.webp" type="image/x-icon">
+
+    <script defer src="../public/js/config.js"></script>
+    <script defer src="../public/js/main.js"></script>
+    <script defer src="../public/js/contact.js"></script>
 </head>
 
 <body>
-    <header>
+
+    <!-- Accesibilidad -->
+    <a href="#contenido-principal" class="skip-link">
+        Saltar al contenido
+    </a>
+
+    <header role="banner">
         <div class="container">
             <div class="logotip">
-                <h1><a href="../index.html">RecoCyc</a></h1>
+                <a href="../index.html" class="logo">RecoCyc</a>
             </div>
-            <nav>
+
+            <nav id="menu-principal" aria-label="Navegación principal">
                 <ul>
                     <li><a href="tipos.html">Tipos</a></li>
                     <li><a href="accesorios.html">Accesorios</a></li>
                     <li><a href="marcas.html">Marcas</a></li>
                     <li><a href="recomendaciones.html">Recomendaciones</a></li>
                     <li><a href="opiniones.html">Opiniones</a></li>
-                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                    <li><a href="contacto.html" class="active" aria-current="page">Contacto</a></li>
                 </ul>
             </nav>
 
-            <div class="menu-toggle" id="menu-toggle">
-<img src="../public/img/desplegable.webp" alt="Icono desplegable">
-            </div>
-
-            <div class="mobile-menu" id="mobile-menu">
-                <ul>
-                    <li><a href="tipos.html">Tipos</a></li>
-                    <li><a href="accesorios.html">Accesorios</a></li>
-                    <li><a href="marcas.html">Marcas</a></li>
-                    <li><a href="recomendaciones.html">Recomendaciones</a></li>
-                    <li><a href="opiniones.html">Opiniones</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false"
+                aria-controls="menu-principal">
+                <img src="../public/img/desplegable.webp" alt="Icono Desplegable" aria-hidden="true" />
+            </button>
         </div>
     </header>
-    <section class="contenido">
-            <p class="text">
-                Si tienes alguna pregunta, sugerencia o simplemente quieres ponerte en contacto con nosotros, no dudes en enviarnos un correo electrónico a <a href="mailto:a.pardo@sapalomera.cat?subject=Consulta desde la página web">cyclismers@gmail.com</a>. Estaremos encantados de ayudarte en todo lo que necesites.
+
+    <main id="contenido-principal" role="main">
+
+        <!-- Breadcrumbs -->
+        <nav aria-label="Ruta de navegación" class="contenido">
+            <p class="breadcrumbs">
+                <a href="../index.html">Inicio</a> › <span>Contacto</span>
             </p>
-    </section>
+        </nav>
 
-    <section class="contenido">
-        <form id="contactForm" class="contact-form">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
+        <!-- Introducción -->
+        <section class="contenido">
+            <h1 class="titol-principal">
+                Contacto
+            </h1>
 
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
+            <p class="text">
+                En <strong>RecoCyc</strong> estamos aquí para ayudarte.
+                Si tienes dudas sobre bicicletas, accesorios, marcas o recomendaciones,
+                puedes escribirnos directamente o utilizar el formulario de contacto.
+            </p>
 
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <p class="text">
+                También puedes enviarnos un correo a
+                <a href="mailto:recocyc1@gmail.com?subject=Consulta desde la página web">
+                    recocyc1@gmail.com
+                </a>
+                y te responderemos lo antes posible.
+            </p>
+        </section>
 
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            const subject = 'Consulta desde la página web';
-            const body = `Nombre: ${name}\nCorreo: ${email}\nMensaje: ${message}`;
-            window.location.href = `mailto:a.pardo@sapalomera.cat?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        });
-    </script>
+        <!-- Formulario -->
+        <section class="contenido">
+            <h2 class="titol">
+                Formulario de contacto
+            </h2>
+
+            <form id="contactForm" class="contact-form" aria-label="Formulario de contacto">
+                <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required autocomplete="name">
+                </div>
+
+                <div>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                </div>
+
+                <div>
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">
+                    Enviar mensaje
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <p>
+            &copy; <span id="year"></span>
+            RecoCyc · Información y recursos sobre ciclismo
+        </p>
+    </footer>
+
 </body>
 
 </html>

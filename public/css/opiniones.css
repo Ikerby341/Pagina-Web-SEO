@@ -1,102 +1,146 @@
+@import url('./header.css');
 @import url('./main.css');
-@import url('./styles.css');
+@import url('./footer.css');
 
-.contenido {
-    width: 100%;
-    margin: 20px auto;
-    padding: 30px 20px;
-    background: #fff;
-    border-radius: 8px;
+/* Skip link */
+.skip-link {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px 16px;
+    z-index: 10000;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 0 0 6px 0;
+    transition: top 0.2s ease;
 }
 
-.contenido h1.titol-principal {
-    font-size: 28px;
-    color: #333;
-    margin: 0 0 20px 0;
-    border-bottom: 3px solid var(--accent);
+.skip-link:focus {
+    top: 0;
 }
 
-.contenido .titolForm {
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.contenido > p.text {
+/* Breadcrumbs */
+.breadcrumbs {
+    font-size: 0.85rem;
     color: #666;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    font-size: 16px;
 }
 
-.contenido > p.text a {
+.breadcrumbs a {
     color: var(--accent);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 }
 
-.contenido > p.text a:hover {
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
     text-decoration: underline;
 }
 
-/* Formulario de opiniones */
+/* Contenedor general */
+.contenido {
+    width: 100%;
+    max-width: 1000px;
+    margin: 32px auto;
+    padding: 32px 24px;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #e3e3e3;
+}
+
+/* Título principal */
+.contenido h1.titol-principal {
+    font-size: clamp(1.8rem, 2.5vw, 2.2rem);
+    color: #222;
+    margin: 0 0 16px 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-wrap: balance;
+}
+
+/* Texto introductorio */
+.contenido > p.text {
+    max-width: 70ch;
+    color: #555;
+    line-height: 1.65;
+    margin-bottom: 24px;
+    font-size: 1rem;
+}
+
+/* Títulos secundarios */
+.contenido .titolForm,
+.contenido h2 {
+    font-size: clamp(1.2rem, 1.6vw, 1.4rem);
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #222;
+}
+
+/* Formulario */
 form {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    gap: 16px;
 }
 
 form label {
-    display: block;
-    font-weight: bold;
+    font-weight: 700;
     color: #333;
-    font-size: 14px;
-    margin-bottom: 6px;
+    font-size: 0.85rem;
     text-transform: uppercase;
+    letter-spacing: 0.04em;
 }
 
 form input,
 form textarea {
     width: 100%;
-    padding: 12px;
+    padding: 14px 12px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
+    border-radius: 6px;
+    font-size: 1rem;
     font-family: inherit;
-    transition: border-color 0.3s, box-shadow 0.3s;
+    background: #fafafa;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 form input:focus,
 form textarea:focus {
     outline: none;
     border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(232, 73, 29, 0.1);
+    box-shadow: 0 0 0 3px rgba(232, 73, 29, 0.15);
+    background: #fff;
 }
 
 form textarea {
     resize: vertical;
-    min-height: 120px;
+    min-height: 140px;
 }
 
+/* Botón */
 form button {
+    margin-top: 8px;
+    align-self: flex-start;
+
     background: var(--accent);
     color: #fff;
     border: none;
-    padding: 14px 28px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
+    padding: 14px 32px;
+    border-radius: 8px;
+
+    font-size: 0.95rem;
+    font-weight: 700;
     text-transform: uppercase;
-    transition: background 0.3s, transform 0.2s;
-    align-self: flex-start;
+    letter-spacing: 0.05em;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.15s ease;
 }
 
 form button:hover {
-    background: #d8491d;
+    background-color: #d8491d;
     transform: translateY(-2px);
 }
 
@@ -104,28 +148,44 @@ form button:active {
     transform: translateY(0);
 }
 
-.seccio {
-    width: 80%;
+form button:focus-visible {
+    outline: 3px solid rgba(232, 73, 29, 0.35);
+    outline-offset: 2px;
+}
+
+/* Comentarios */
+#Comentarios {
     display: flex;
     flex-direction: column;
-    align-self: stretch;
+    gap: 16px;
 }
 
-#Comentarios h2 {
-    text-transform: uppercase;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 5px;
+#Comentarios > div {
+    padding: 16px 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background: #fafafa;
 }
 
-/* Pantallas móviles */
+#Comentarios h3 {
+    margin: 0 0 6px 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #222;
+}
+
+#Comentarios p {
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
     .contenido {
-        padding: 20px 15px;
-    }
-
-    .contenido h1.titol-principal {
-        font-size: 24px;
-        margin-bottom: 15px;
+        padding: 24px 16px;
+        margin: 24px auto;
     }
 
     form button {

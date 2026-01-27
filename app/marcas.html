@@ -1,90 +1,248 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RecoCyc | Marcas destacadas</title>
-    <link rel="stylesheet" href="../public/css/main.css" />
-    <link rel="stylesheet" href="/../public/css/header.css" />
-    <link rel="stylesheet" href="/../public/css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>RecoCyc | Marcas de bicicletas recomendadas</title>
+
+    <meta name="description"
+        content="Descubre las marcas de bicicletas más reconocidas y fiables del mercado como Scott, Orbea, Trek, Giant y Specialized. Análisis claro para elegir con confianza." />
+
+    <meta name="author" content="Equipo RecoCyc" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://recocyc.pages.dev/app/marcas.html" />
+    <meta property="og:title" content="RecoCyc | Marcas de bicicletas recomendadas" />
+    <meta property="og:description"
+        content="Análisis de las marcas de bicicletas más destacadas y confiables para ciclistas de todos los niveles." />
+    <meta property="og:site_name" content="RecoCyc" />
+    <meta property="og:image" content="https://recocyc.pages.dev/public/img/favicon.webp" />
+    <meta property="og:image:alt" content="RecoCyc - Marcas de bicicletas" />
+
+    <link rel="canonical" href="https://recocyc.pages.dev/app/marcas.html" />
+
+    <link rel="stylesheet" href="../public/css/home.css" />
+    <link rel="icon" href="../public/img/favicon.webp" type="image/x-icon" />
+
     <script defer src="../public/js/config.js"></script>
-    <link rel="icon" href="../public/img/favicon.webp" type="image/x-icon">
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+            "@type": "WebPage",
+            "@id": "https://recocyc.pages.dev/app/marcas.html",
+            "url": "https://recocyc.pages.dev/app/marcas.html",
+            "name": "Marcas de bicicletas recomendadas | RecoCyc",
+            "description": "Análisis de las marcas de bicicletas más reconocidas y fiables como Scott, Orbea, Trek, Giant y Specialized.",
+            "inLanguage": "es",
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://recocyc.pages.dev/"
+            }
+            },
+            {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": "https://recocyc.pages.dev/"
+                },
+                {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Marcas",
+                "item": "https://recocyc.pages.dev/app/marcas.html"
+                }
+            ]
+            },
+            {
+            "@type": "ItemList",
+            "name": "Marcas de bicicletas recomendadas",
+            "itemListOrder": "http://schema.org/ItemListOrderAscending",
+            "itemListElement": [
+                {
+                "@type": "Brand",
+                "name": "Stevens"
+                },
+                {
+                "@type": "Brand",
+                "name": "Scott"
+                },
+                {
+                "@type": "Brand",
+                "name": "Orbea"
+                },
+                {
+                "@type": "Brand",
+                "name": "Specialized"
+                },
+                {
+                "@type": "Brand",
+                "name": "Trek"
+                },
+                {
+                "@type": "Brand",
+                "name": "Giant"
+                },
+                {
+                "@type": "Brand",
+                "name": "Cannondale"
+                }
+            ]
+            },
+            {
+            "@type": "Organization",
+            "@id": "https://recocyc.pages.dev/#organization",
+            "name": "RecoCyc",
+            "url": "https://recocyc.pages.dev/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://recocyc.pages.dev/public/img/favicon.webp"
+            }
+            }
+        ]
+        }
+    </script>
+
+
 </head>
 
 <body>
-    <header>
+    <!-- Accesibilidad -->
+    <a href="#contenido-principal" class="skip-link">
+        Saltar al contenido
+    </a>
+
+    <header role="banner">
         <div class="container">
             <div class="logotip">
-                <h1><a href="../index.html">RecoCyc</a></h1>
+                <a href="../index.html" class="logo">RecoCyc</a>
             </div>
-            <nav>
+
+            <nav id="menu-principal" aria-label="Navegación principal">
                 <ul>
                     <li><a href="tipos.html">Tipos</a></li>
                     <li><a href="accesorios.html">Accesorios</a></li>
-                    <li><a href="marcas.html" class="active">Marcas</a></li>
+                    <li><a href="marcas.html" class="active" aria-current="page">Marcas</a></li>
                     <li><a href="recomendaciones.html">Recomendaciones</a></li>
                     <li><a href="opiniones.html">Opiniones</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
 
-            <div class="menu-toggle" id="menu-toggle">
-<img src="../public/img/desplegable.webp" alt="Icono desplegable">
-            </div>
-
-            <div class="mobile-menu" id="mobile-menu">
-                <ul>
-                    <li><a href="tipos.html">Tipos</a></li>
-                    <li><a href="accesorios.html">Accesorios</a></li>
-                    <li><a href="marcas.html">Marcas</a></li>
-                    <li><a href="recomendaciones.html">Recomendaciones</a></li>
-                    <li><a href="opiniones.html">Opiniones</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false"
+                aria-controls="menu-principal">
+                <img src="../public/img/desplegable.webp" alt="Icono Desplegable" aria-hidden="true" />
+            </button>
         </div>
     </header>
 
-    <main>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <section class="contenido">
-            <h1 class="titol-principal">Marcas destacadas de nuestra selección</h1>
-            <p class="text">
-                En este apartado encontraras las marcas más reconocidas y confiables en el mundo de las bicicletas, cada una con su propia historia y especialización.
+    <main id="contenido-principal" role="main">
+        <!-- Breadcrumbs -->
+        <nav aria-label="Ruta de navegación" class="contenidoBread">
+            <p class="breadcrumbs">
+                <a href="../index.html">Inicio</a> › <span>Marcas</span>
             </p>
-    </section>
-    <section class="contenido">
-            <h1 class="titol">Stivens</h1>
-            <p class="text">Stivens ofrece una excelente relación calidad-precio y es reconocida por su durabilidad en entornos urbanos y recreativos. Su accesibilidad de repuestos y amplia presencia local hacen que sea una opción confiable para quienes buscan una bicicleta práctica y fácil de mantener.</p>
+        </nav>
+
+        <!-- INTRO -->
+        <section class="contenido">
+            <h1 class="titol-principal">
+                Marcas de bicicletas recomendadas
+            </h1>
+            <p class="text">
+                En esta sección encontrarás una selección de marcas de bicicletas reconocidas por su
+                calidad, fiabilidad e innovación, pensadas para ciclistas principiantes y experimentados.
+            </p>
         </section>
-    <section class="contenido">
-            <h1 class="titol">Scott</h1>
-            <p class="text">Scott es sinónimo de innovación y rendimiento, con una fuerte trayectoria en mountain bike y competición. Su enfoque en I+D y la calidad de sus componentes garantizan fiabilidad y excelente comportamiento tanto para aficionados exigentes como para profesionales.</p>
+
+        <!-- MARCAS -->
+        <section class="contenido">
+            <article>
+                <h2 class="titol">Stevens</h2>
+                <p class="text">
+                    Stevens ofrece una excelente relación calidad-precio y destaca por su durabilidad en
+                    entornos urbanos y recreativos. Es una opción práctica y fácil de mantener.
+                </p>
+            </article>
         </section>
-    <section class="contenido">
-            <h1 class="titol">Orbea</h1>
-            <p class="text">Orbea, con raíces españolas, destaca por la atención al detalle y la personalización de sus modelos. Su reputación en fabricación y el soporte postventa local hacen que sea una marca de confianza para quienes buscan calidad y opciones adaptadas al ciclista.</p>
+
+        <section class="contenido">
+            <article>
+                <h2 class="titol">Scott</h2>
+                <p class="text">
+                    Scott es sinónimo de innovación y alto rendimiento, especialmente en mountain bike y
+                    competición. Su inversión en I+D garantiza fiabilidad y precisión.
+                </p>
+            </article>
         </section>
-    <section class="contenido">
-            <h1 class="titol">Specialized</h1>
-            <p class="text">Specialized es una marca líder conocida por su innovación, ergonomía y enfoque en el rendimiento del usuario. Su amplia red de distribuidores y el respaldo técnico ofrecen seguridad y garantías de mantenimiento a largo plazo.</p>
+
+        <section class="contenido">
+            <article>
+                <h2 class="titol">Orbea</h2>
+                <p class="text">
+                    Orbea destaca por su fabricación cuidada, opciones de personalización y fuerte soporte
+                    postventa, siendo una referencia dentro y fuera de España.
+                </p>
+            </article>
         </section>
-    <section class="contenido">
-            <h1 class="titol">Trek</h1>
-            <p class="text">Trek combina diseño sólido con controles de calidad estrictos y una gama amplia para todos los niveles. Su presencia global y servicio de atención al cliente hacen que sea una elección confiable para ciclistas que buscan respaldo y disponibilidad de piezas.</p>
+
+        <section class="contenido">
+            <article>
+                <h2 class="titol">Specialized</h2>
+                <p class="text">
+                    Marca líder en innovación, ergonomía y rendimiento. Specialized ofrece soluciones
+                    avanzadas para ciclistas exigentes con una amplia red de distribuidores.
+                </p>
+            </article>
         </section>
-    <section class="contenido">
-            <h1 class="titol">Giant</h1>
-            <p class="text">Giant, como uno de los mayores fabricantes del mundo, destaca por su capacidad de producción y control de calidad. Ofrece buena relación calidad-precio y fiabilidad constante, respaldada por procesos industriales maduros.</p>
+
+        <section class="contenido">
+            <article>
+                <h2 class="titol">Trek</h2>
+                <p class="text">
+                    Trek combina diseño sólido, control de calidad estricto y una gama completa para todos
+                    los niveles, con excelente soporte y disponibilidad de repuestos.
+                </p>
+            </article>
         </section>
-    <section class="contenido">
-            <h1 class="titol">Cannondale</h1>
-            <p class="text">Cannondale es conocida por su ingeniería avanzada y modelos orientados al rendimiento. La calidad de sus materiales y su espíritu innovador la convierten en una opción fiable para quienes valoran la tecnología y la resistencia en la bicicleta.</p>
+
+        <section class="contenido">
+            <article>
+                <h2 class="titol">Giant</h2>
+                <p class="text">
+                    Giant es uno de los mayores fabricantes del mundo y destaca por su consistencia,
+                    fiabilidad y muy buena relación calidad-precio.
+                </p>
+            </article>
         </section>
-    
+
+        <section class="contenido">
+            <article>
+                <h2 class="titol">Cannondale</h2>
+                <p class="text">
+                    Cannondale apuesta por la ingeniería avanzada y el rendimiento, siendo una marca ideal
+                    para ciclistas que buscan tecnología e innovación.
+                </p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <p>
+            &copy; <span id="year"></span>
+            RecoCyc · Información y recursos sobre ciclismo
+        </p>
+    </footer>
+
 </body>
 
 </html>

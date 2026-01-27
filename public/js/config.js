@@ -1,15 +1,24 @@
-const menuToggle = document.getElementById('menu-toggle');
-const mobileMenu = document.getElementById('mobile-menu');
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("menu-principal");
 
-if (menuToggle && mobileMenu) {
-    menuToggle.addEventListener('click', function() {
-        mobileMenu.classList.toggle('active');
-    });
-
-    const links = mobileMenu.querySelectorAll('a');
-    links.forEach(link => {
-        link.addEventListener('click', function() {
-            mobileMenu.classList.remove('active');
+    if (menuToggle && nav) {
+        menuToggle.addEventListener("click", () => {
+            const isOpen = nav.classList.toggle("active");
+            menuToggle.setAttribute("aria-expanded", isOpen);
         });
-    });
-}
+
+        const links = nav.querySelectorAll("a");
+        links.forEach(link => {
+            link.addEventListener("click", () => {
+                nav.classList.remove("active");
+                menuToggle.setAttribute("aria-expanded", "false");
+            });
+        });
+    }
+
+    const year = document.getElementById("year");
+    if (year) {
+        year.textContent = new Date().getFullYear();
+    }
+});
